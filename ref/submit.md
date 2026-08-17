@@ -1,0 +1,29 @@
+# Submission Checklist
+
+- [ ] **Prepare Folder Structure & Files**
+    - [ ] Main Report (Markdown + PDF format)
+    - [ ] AI Audit Report & AI Critique (Markdown + PDF format)
+    - [ ] Git commit log (Text file format)
+    - [ ] README.md (with Self-assessment table and Test summary)
+    - [ ] 9 HTML reports (Allure or Playwright)
+- [ ] **Task 1: Automation**
+    - [ ] 3 Features (Pool A, B, C) selected and automated
+    - [ ] Min 12 Test Cases per feature
+    - [ ] Test data separated in .csv or .json files
+    - [ ] Min 3 distinct assertion patterns used
+    - [ ] Reports for 9 runs contain "Run by: <StudentID>" and ISO timestamp
+- [ ] **Task 2: Demo Video**
+    - [ ] Video uploaded to YouTube as "Unlisted"
+    - [ ] Min 5 minutes duration
+    - [ ] Narrated in Vietnamese
+    - [ ] Evidence of authorship (Face-cam or terminal `whoami`/`hostname`)
+- [ ] **GitHub Repository**
+    - [ ] Repository is set to "Public"
+    - [ ] Min 8 commits changing test scripts (.spec files)
+    - [ ] All bugs logged in GitHub Issues with screenshots
+- [ ] **Final Packaging**
+    - [ ] Zip file named: `<StudentID>_HW04_AI_Automation_<SelfAssessedGrade>.zip`
+    - [ ] SelfAssessedGrade is a 3-digit number (e.g., 095)
+    - [ ] Verify all deliverables are inside the zip
+- [ ] **Moodle**
+    - [ ] Submit before the deadline
