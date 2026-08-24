@@ -1,55 +1,3 @@
-# AI Audit for HW4
-## 1. Trích dẫn thông tin từ FR-02
-<a id="log-1"></a>
-- **Timestamp**: 15:51 22/08/2026
-- **Tools**: NotebookLM
-- **Input**: `HW02_report.md`, `api_specification.md`, `README_sut.md`, `HW04.pdf`
-- **Prompt**:
-
-==Prompt Start==
-Cho tôi toàn bộ thông tin về FR-02, để thực hiện automation testing cho HW4
-Quy tắc:
-
-
-    Không tóm tắt
-
-    Không suy diễn
-
-    Không tự tạo thông tin không có trong nguồn
-==Promp End==
-
-- **Output**
-
-==Output Start==
-`FR-02_Extract.md`
-==Output End==
-
-- **Verdict**: Valid
-- **Reasoning**: NotebookLm đã trích dẫn đầy đủ thông tin từ các file theo yêu cầu
-- **Student fix**: Không cần thiết
-
-## 2. Thiết kế Test case cho FR-02
-<a id="log-2"></a>
-- **Timestamp**: 16:06 22/08/2026
-- **Tools**: ChatGPT
-- **Input**: `FR-02_Extract.md`
-- **Prompt**:
-
-==Prompt Start==
-[Nhiệm vụ]
-Dựa vào thông tin sau
-Đọc và thiết kế các test case cho FR-02: login and lock account
-Đây là test case cho automation testing, chỉ thực hiện test trên browser, test web
-
-[Thông tin]
-file `FR-02_Extract.md`
-
-[16:04 22/08/2026]
-==Promp End==
-
-- **Output**
-
-==Output Start==
 Dựa trên đặc tả bạn đưa và **giới hạn của HW4 là automation testing trên browser/web**, mình sẽ **thiết kế lại test case cho FR-02**, thay vì bê nguyên 8 test case hiện tại sang Playwright.
 
 Có một điểm rất quan trọng: các test case `TC_FR02_06` và `TC_FR02_07` hiện tại đang kiểm tra trực tiếp biến nội bộ **Failed Attempts = 0/2**. Browser không có input nào cho biến này, nên **không nên giữ cách viết đó trong automation test case**. Ta phải tạo trạng thái `0`, `1`, `2`, `3` thông qua các thao tác đăng nhập thực tế.
@@ -493,8 +441,3 @@ vì chúng cover:
 * hết đúng 30 giây và unlock
 
 Đặc biệt, `TC_FR02_07` và `TC_FR02_08` nên được thiết kế thành **test sequence**, không chạy như những test login độc lập. Điều này cũng giúp automation có khả năng phát hiện chính xác bug `B_FR02_01` mà bạn đã tìm thấy.
-==Output End==
-
-- **Verdict**: Incomplete
-- **Reasoning**: ChatGPT đã thiết kế các test case nhưng chưa làm rõ các test data
-- **Student fix**: Cần hoàn thiện test data
