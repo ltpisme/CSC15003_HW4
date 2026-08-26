@@ -1,0 +1,138 @@
+{
+  "credentials": {
+    "validUser": {
+      "email": "test@eshop.com",
+      "password": "Test1234!"
+    },
+    "wrongPasswordUser": {
+      "email": "test@eshop.com",
+      "password": "WrongPass"
+    },
+    "unknownUser": {
+      "email": "unknown@eshop.com",
+      "password": "Test1234!"
+    },
+    "invalidEmailUser": {
+      "email": "invalid-email",
+      "password": "Test1234!"
+    },
+    "emptyEmailUser": {
+      "email": "",
+      "password": "Test1234!"
+    },
+    "emptyPasswordUser": {
+      "email": "test@eshop.com",
+      "password": ""
+    }
+  },
+  "lockoutConfig": {
+    "lockoutThreshold": 3,
+    "lockoutDurationMs": 30000
+  },
+  "functionalCases": [
+    {
+      "id": "TC_FR02_01",
+      "title": "TC_FR02_01 - Login successfully with valid credentials",
+      "email": "test@eshop.com",
+      "password": "Test1234!",
+      "expectedResult": "success"
+    },
+    {
+      "id": "TC_FR02_02",
+      "title": "TC_FR02_02 - Reject email with invalid HTML5 email format",
+      "email": "invalid-email",
+      "password": "Test1234!",
+      "expectedResult": "html5_validation_error"
+    },
+    {
+      "id": "TC_FR02_03",
+      "title": "TC_FR02_03 - Reject login with non-existing email",
+      "email": "unknown@eshop.com",
+      "password": "Test1234!",
+      "expectedResult": "generic_auth_error"
+    },
+    {
+      "id": "TC_FR02_04",
+      "title": "TC_FR02_04 - Reject login with incorrect password",
+      "email": "test@eshop.com",
+      "password": "WrongPass",
+      "expectedResult": "generic_auth_error"
+    }
+  ],
+  "lockoutCases": [
+    {
+      "id": "TC_FR02_05",
+      "title": "TC_FR02_05 - First failed login attempt does not lock account",
+      "failedAttempts": 1,
+      "shouldLock": false
+    },
+    {
+      "id": "TC_FR02_06",
+      "title": "TC_FR02_06 - Second consecutive failed login attempt does not lock account",
+      "failedAttempts": 2,
+      "shouldLock": false
+    },
+    {
+      "id": "TC_FR02_07",
+      "title": "TC_FR02_07 - Third consecutive failed login attempt locks account",
+      "failedAttempts": 3,
+      "shouldLock": true
+    },
+    {
+      "id": "TC_FR02_08",
+      "title": "TC_FR02_08 - Correct password is rejected while account is locked",
+      "failedAttempts": 3,
+      "tryValidWhileLocked": true
+    },
+    {
+      "id": "TC_FR02_09",
+      "title": "TC_FR02_09 - Account can login again after 30-second lock period",
+      "failedAttempts": 3,
+      "waitMs": 30000,
+      "tryValidAfterWait": true
+    },
+    {
+      "id": "TC_FR02_10",
+      "title": "TC_FR02_10 - Account remains locked while lock period is active",
+      "failedAttempts": 3,
+      "immediateRetry": true
+    }
+  ],
+  "guiCases": [
+    {
+      "id": "TC_FR02_11",
+      "title": "TC_FR02_11 - Email field uses type=email",
+      "expectedType": "email"
+    },
+    {
+      "id": "TC_FR02_12",
+      "title": "TC_FR02_12 - Password field uses type=password",
+      "expectedType": "password"
+    },
+    {
+      "id": "TC_FR02_13",
+      "title": "TC_FR02_13 - Login page contains exactly one h1",
+      "expectedH1Count": 1
+    },
+    {
+      "id": "TC_FR02_14",
+      "title": "TC_FR02_14 - Required login fields are marked as required",
+      "expectedRequired": true
+    },
+    {
+      "id": "TC_FR02_15",
+      "title": "TC_FR02_15 - Authentication error is displayed above submit button",
+      "expectedPosition": "above_submit"
+    },
+    {
+      "id": "TC_FR02_16",
+      "title": "TC_FR02_16 - Password characters are hidden",
+      "expectedType": "password"
+    },
+    {
+      "id": "TC_FR02_17",
+      "title": "TC_FR02_17 - Tab order follows the login form layout",
+      "maxTabs": 6
+    }
+  ]
+}
