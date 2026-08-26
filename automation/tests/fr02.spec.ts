@@ -242,6 +242,7 @@ test.describe('FR-02 - Login and Lock Account', () => {
   test('TC_FR02_09 - Account can login again after 30-second lock period', async ({
     page,
   }) => {
+    test.setTimeout(60000);
     const testCase = lockoutCases.find((c: any) => c.id === 'TC_FR02_09')!;
     for (let i = 0; i < testCase.failedAttempts; i++) {
       if (i > 0) await openLoginPage(page);
