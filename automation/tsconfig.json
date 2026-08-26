@@ -14,6 +14,7 @@
   },
   "include": [
     "tests/**/*.ts",
-    "playwright.config.ts"
+    "playwright.config.ts",
+    "reporters/**/*.ts"
   ]
 }

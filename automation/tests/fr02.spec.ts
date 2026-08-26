@@ -1,13 +1,15 @@
 import { test, expect, Page } from '@playwright/test';
+import * as fs from 'fs';
+import * as path from 'path';
+
+// Load external test data
+const dataPath = path.resolve(__dirname, '../data/fr02-data.json');
+const testData = JSON.parse(fs.readFileSync(dataPath, 'utf-8'));
 
 const BASE_URL = 'http://localhost:5173';
 const LOGIN_URL = `${BASE_URL}/login`;
 
-const VALID_EMAIL = 'test@eshop.com';
-const VALID_PASSWORD = 'Test1234!';
-const WRONG_PASSWORD = 'WrongPass';
-const UNKNOWN_EMAIL = 'unknown@eshop.com';
-const INVALID_EMAIL = 'invalid-email';
+const { credentials, functionalCases, lockoutCases, guiCases, lockoutConfig } = testData;
 
 /**
  * Navigate to login page and wait until the page is ready.
@@ -18,11 +20,7 @@ async function openLoginPage(page: Page) {
 }
 
 /**
- * Fill login form.
- *
- * The current UI description identifies the first field as "Username".
- * Therefore the helper first tries common semantic selectors and then
- * falls back to input[type="email"] if the implementation follows SRS.
+ * Fill login form using semantic selectors with fallback for non-standard input attributes.
  */
 async function fillLoginForm(
   page: Page,
@@ -31,11 +29,11 @@ async function fillLoginForm(
 ) {
   const emailInput = page.locator(
     'input[type="email"], input[name="email"], input[name="username"]'
-  ).first();
+  ).or(page.locator('form input').first());
 
   const passwordInput = page.locator(
     'input[type="password"], input[name="password"]'
-  ).first();
+  ).or(page.locator('form input').nth(1));
 
   await expect(emailInput).toBeVisible();
   await expect(passwordInput).toBeVisible();
@@ -46,13 +44,11 @@ async function fillLoginForm(
 
 /**
  * Submit the login form.
- *
- * Current UI description says "Sign In".
  */
 async function submitLogin(page: Page) {
   const submitButton = page.getByRole('button', {
-    name: /Sign In|Đăng nhập/i,
-  });
+    name: /Sign In|Đăng nhập|Login/i,
+  }).or(page.locator('form button[type="submit"], form button').first());
 
   await expect(submitButton).toBeVisible();
   await submitButton.click();
@@ -62,7 +58,7 @@ async function submitLogin(page: Page) {
  * Perform one failed login attempt.
  */
 async function failedLogin(page: Page) {
-  await fillLoginForm(page, VALID_EMAIL, WRONG_PASSWORD);
+  await fillLoginForm(page, credentials.validUser.email, credentials.wrongPasswordUser.password);
   await submitLogin(page);
 }
 
@@ -70,25 +66,21 @@ async function failedLogin(page: Page) {
  * Perform a successful login attempt.
  */
 async function successfulLogin(page: Page) {
-  await fillLoginForm(page, VALID_EMAIL, VALID_PASSWORD);
+  await fillLoginForm(page, credentials.validUser.email, credentials.validUser.password);
   await submitLogin(page);
 }
 
 /**
  * Detect whether an authentication error is displayed.
- *
- * The exact error text is intentionally not hard-coded because
- * the SRS requires a suitable generic error message without
- * exposing detailed authentication information.
  */
 function authError(page: Page) {
   return page.locator(
-    '[role="alert"], .error, .error-message, .alert, .alert-danger'
+    '[role="alert"], .error, .error-message, .alert, .alert-danger, .bg-red-100, [class*="text-red-"]'
   ).first();
 }
 
 /* ============================================================
- * FR-02 Functional Tests
+ * FR-02 Functional Tests (Data-Driven)
  * ========================================================== */
 
 test.describe('FR-02 - Login and Lock Account', () => {
@@ -99,175 +91,127 @@ test.describe('FR-02 - Login and Lock Account', () => {
   test('TC_FR02_01 - Login successfully with valid credentials', async ({
     page,
   }) => {
-    await fillLoginForm(page, VALID_EMAIL, VALID_PASSWORD);
+    const testCase = functionalCases.find((c: any) => c.id === 'TC_FR02_01')!;
+    await fillLoginForm(page, testCase.email, testCase.password);
     await submitLogin(page);
 
-    // The exact post-login URL is not specified by the SRS.
-    // Therefore verify that the user leaves the login page.
+    // Verify user leaves login page upon successful authentication
     await expect(page).not.toHaveURL(/\/login$/);
   });
 
   test('TC_FR02_02 - Reject email with invalid HTML5 email format', async ({
     page,
   }) => {
+    const testCase = functionalCases.find((c: any) => c.id === 'TC_FR02_02')!;
     const emailInput = page.locator(
       'input[type="email"], input[name="email"]'
-    ).first();
+    ).or(page.locator('form input').first());
 
     await expect(emailInput).toBeVisible();
-
-    await emailInput.fill(INVALID_EMAIL);
+    await emailInput.fill(testCase.email);
 
     const passwordInput = page.locator(
       'input[type="password"], input[name="password"]'
-    ).first();
+    ).or(page.locator('form input').nth(1));
 
-    await passwordInput.fill(VALID_PASSWORD);
-
+    await passwordInput.fill(testCase.password);
     await submitLogin(page);
 
-    /*
-     * HTML5 validation should prevent form submission.
-     */
+    // HTML5 validation should prevent form submission
     await expect(emailInput).toHaveJSProperty('validity.valid', false);
-
     await expect(page).toHaveURL(/\/login$/);
   });
 
   test('TC_FR02_03 - Reject login with non-existing email', async ({
     page,
   }) => {
-    await fillLoginForm(
-      page,
-      UNKNOWN_EMAIL,
-      VALID_PASSWORD
-    );
-
+    const testCase = functionalCases.find((c: any) => c.id === 'TC_FR02_03')!;
+    await fillLoginForm(page, testCase.email, testCase.password);
     await submitLogin(page);
 
     await expect(page).toHaveURL(/\/login$/);
 
     const error = authError(page);
-
     await expect(error).toBeVisible();
 
-    /*
-     * The system must not reveal whether the email exists.
-     *
-     * Therefore reject detailed messages such as:
-     * "Email does not exist".
-     */
+    // The system must not reveal whether the email exists
     const errorText = await error.textContent();
-
-    expect(errorText?.toLowerCase()).not.toContain(
-      'email does not exist'
-    );
-
-    expect(errorText?.toLowerCase()).not.toContain(
-      'user not found'
-    );
+    expect(errorText?.toLowerCase()).not.toContain('email does not exist');
+    expect(errorText?.toLowerCase()).not.toContain('user not found');
   });
 
   test('TC_FR02_04 - Reject login with incorrect password', async ({
     page,
   }) => {
-    await fillLoginForm(
-      page,
-      VALID_EMAIL,
-      WRONG_PASSWORD
-    );
-
+    const testCase = functionalCases.find((c: any) => c.id === 'TC_FR02_04')!;
+    await fillLoginForm(page, testCase.email, testCase.password);
     await submitLogin(page);
 
     await expect(page).toHaveURL(/\/login$/);
 
     const error = authError(page);
-
     await expect(error).toBeVisible();
   });
 
   /* ============================================================
-   * Lock Account / Boundary Tests
+   * Lock Account / Boundary Tests (Data-Driven)
    * ========================================================== */
 
   test('TC_FR02_05 - First failed login attempt does not lock account', async ({
     page,
   }) => {
-    await failedLogin(page);
+    const testCase = lockoutCases.find((c: any) => c.id === 'TC_FR02_05')!;
+    for (let i = 0; i < testCase.failedAttempts; i++) {
+      if (i > 0) await openLoginPage(page);
+      await failedLogin(page);
+    }
 
     await expect(page).toHaveURL(/\/login$/);
 
     const error = authError(page);
     await expect(error).toBeVisible();
 
-    /*
-     * Account should still be usable.
-     * Try valid credentials immediately after one failed attempt.
-     */
+    // Account should still be usable with valid credentials
     await successfulLogin(page);
-
     await expect(page).not.toHaveURL(/\/login$/);
   });
 
   test('TC_FR02_06 - Second consecutive failed login attempt does not lock account', async ({
     page,
   }) => {
-    await failedLogin(page);
-
-    await openLoginPage(page);
-
-    await failedLogin(page);
+    const testCase = lockoutCases.find((c: any) => c.id === 'TC_FR02_06')!;
+    for (let i = 0; i < testCase.failedAttempts; i++) {
+      if (i > 0) await openLoginPage(page);
+      await failedLogin(page);
+    }
 
     await expect(page).toHaveURL(/\/login$/);
 
     const error = authError(page);
     await expect(error).toBeVisible();
 
-    /*
-     * Account should still accept valid credentials after
-     * exactly two consecutive failures.
-     */
+    // Account should accept valid credentials after 2 consecutive failures
     await openLoginPage(page);
-
     await successfulLogin(page);
-
     await expect(page).not.toHaveURL(/\/login$/);
   });
 
   test('TC_FR02_07 - Third consecutive failed login attempt locks account', async ({
     page,
   }) => {
-    /*
-     * Failed attempt #1
-     */
-    await failedLogin(page);
-
-    /*
-     * Failed attempt #2
-     */
-    await openLoginPage(page);
-    await failedLogin(page);
-
-    /*
-     * Failed attempt #3 - boundary value
-     */
-    await openLoginPage(page);
-    await failedLogin(page);
+    const testCase = lockoutCases.find((c: any) => c.id === 'TC_FR02_07')!;
+    for (let i = 0; i < testCase.failedAttempts; i++) {
+      if (i > 0) await openLoginPage(page);
+      await failedLogin(page);
+    }
 
     await expect(page).toHaveURL(/\/login$/);
 
     const error = authError(page);
-
     await expect(error).toBeVisible();
 
-    /*
-     * The third consecutive failure must put the account
-     * into locked state.
-     */
-    const errorText = (
-      await error.textContent()
-    )?.toLowerCase() ?? '';
-
+    // Third failure must lock account
+    const errorText = (await error.textContent())?.toLowerCase() ?? '';
     expect(
       errorText.includes('khóa') ||
       errorText.includes('locked') ||
@@ -278,35 +222,19 @@ test.describe('FR-02 - Login and Lock Account', () => {
   test('TC_FR02_08 - Correct password is rejected while account is locked', async ({
     page,
   }) => {
-    /*
-     * Create locked state.
-     */
-    await failedLogin(page);
+    const testCase = lockoutCases.find((c: any) => c.id === 'TC_FR02_08')!;
+    for (let i = 0; i < testCase.failedAttempts; i++) {
+      if (i > 0) await openLoginPage(page);
+      await failedLogin(page);
+    }
 
+    // Attempt login using correct credentials while locked
     await openLoginPage(page);
-    await failedLogin(page);
-
-    await openLoginPage(page);
-    await failedLogin(page);
-
-    /*
-     * Attempt login using correct credentials while locked.
-     */
-    await openLoginPage(page);
-
-    await fillLoginForm(
-      page,
-      VALID_EMAIL,
-      VALID_PASSWORD
-    );
-
+    await fillLoginForm(page, credentials.validUser.email, credentials.validUser.password);
     await submitLogin(page);
 
-    /*
-     * The account must remain locked.
-     */
+    // Account must remain locked
     await expect(page).toHaveURL(/\/login$/);
-
     const error = authError(page);
     await expect(error).toBeVisible();
   });
@@ -314,109 +242,75 @@ test.describe('FR-02 - Login and Lock Account', () => {
   test('TC_FR02_09 - Account can login again after 30-second lock period', async ({
     page,
   }) => {
-    /*
-     * Create locked state.
-     */
-    await failedLogin(page);
+    test.setTimeout(60000);
+    const testCase = lockoutCases.find((c: any) => c.id === 'TC_FR02_09')!;
+    for (let i = 0; i < testCase.failedAttempts; i++) {
+      if (i > 0) await openLoginPage(page);
+      await failedLogin(page);
+    }
+
+    // Wait for specified lockout duration (30 seconds)
+    await page.waitForTimeout(testCase.waitMs ?? lockoutConfig.lockoutDurationMs);
 
     await openLoginPage(page);
-    await failedLogin(page);
-
-    await openLoginPage(page);
-    await failedLogin(page);
-
-    /*
-     * Wait for the specified lock duration.
-     *
-     * This is intentionally explicit because 30 seconds
-     * is a business requirement.
-     */
-    await page.waitForTimeout(30_000);
-
-    await openLoginPage(page);
-
     await successfulLogin(page);
-
     await expect(page).not.toHaveURL(/\/login$/);
   });
 
   test('TC_FR02_10 - Account remains locked while lock period is active', async ({
     page,
   }) => {
-    /*
-     * Create locked state.
-     */
-    await failedLogin(page);
+    const testCase = lockoutCases.find((c: any) => c.id === 'TC_FR02_10')!;
+    for (let i = 0; i < testCase.failedAttempts; i++) {
+      if (i > 0) await openLoginPage(page);
+      await failedLogin(page);
+    }
 
+    // Attempt login immediately while lockout is active
     await openLoginPage(page);
-    await failedLogin(page);
-
-    await openLoginPage(page);
-    await failedLogin(page);
-
-    /*
-     * Attempt another login immediately.
-     */
-    await openLoginPage(page);
-
-    await fillLoginForm(
-      page,
-      VALID_EMAIL,
-      VALID_PASSWORD
-    );
-
+    await fillLoginForm(page, credentials.validUser.email, credentials.validUser.password);
     await submitLogin(page);
 
-    /*
-     * Must still be locked.
-     */
     await expect(page).toHaveURL(/\/login$/);
-
     const error = authError(page);
     await expect(error).toBeVisible();
   });
 
   /* ============================================================
-   * GUI / HTML Tests
+   * GUI / HTML Tests (Data-Driven)
    * ========================================================== */
 
   test('TC_FR02_11 - Email field uses type=email', async ({
     page,
   }) => {
+    const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_11')!;
     const emailInput = page.locator(
       'input[name="email"], input[type="email"]'
-    ).first();
+    ).or(page.locator('form input').first());
 
     await expect(emailInput).toBeVisible();
-
-    await expect(emailInput).toHaveAttribute(
-      'type',
-      'email'
-    );
+    await expect(emailInput).toHaveAttribute('type', testCase.expectedType);
   });
 
   test('TC_FR02_12 - Password field uses type=password', async ({
     page,
   }) => {
+    const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_12')!;
     const passwordInput = page.locator(
       'input[name="password"], input[type="password"]'
-    ).first();
+    ).or(page.locator('form input').nth(1));
 
     await expect(passwordInput).toBeVisible();
-
-    await expect(passwordInput).toHaveAttribute(
-      'type',
-      'password'
-    );
+    await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
   });
 
   test('TC_FR02_13 - Login page contains exactly one h1', async ({
     page,
   }) => {
+    const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_13')!;
     const h1 = page.locator('h1');
 
-    await expect(h1).toHaveCount(1);
-
+    await expect(h1).toHaveCount(testCase.expectedH1Count);
     await expect(h1.first()).toBeVisible();
   });
 
@@ -425,88 +319,62 @@ test.describe('FR-02 - Login and Lock Account', () => {
   }) => {
     const emailInput = page.locator(
       'input[name="email"], input[type="email"], input[name="username"]'
-    ).first();
+    ).or(page.locator('form input').first());
 
     const passwordInput = page.locator(
       'input[name="password"], input[type="password"]'
-    ).first();
+    ).or(page.locator('form input').nth(1));
 
     await expect(emailInput).toBeVisible();
     await expect(passwordInput).toBeVisible();
 
-    /*
-     * HTML required attribute.
-     */
-    await expect(emailInput).toHaveAttribute(
-      'required',
-      ''
-    );
-
-    await expect(passwordInput).toHaveAttribute(
-      'required',
-      ''
-    );
+    await expect(emailInput).toHaveAttribute('required', '');
+    await expect(passwordInput).toHaveAttribute('required', '');
   });
 
   test('TC_FR02_15 - Authentication error is displayed above submit button', async ({
     page,
   }) => {
-    await fillLoginForm(
-      page,
-      VALID_EMAIL,
-      WRONG_PASSWORD
-    );
-
+    await fillLoginForm(page, credentials.validUser.email, credentials.wrongPasswordUser.password);
     await submitLogin(page);
 
     const error = authError(page);
-
     const submitButton = page.getByRole('button', {
-      name: /Sign In|Đăng nhập/i,
-    });
+      name: /Sign In|Đăng nhập|Login/i,
+    }).or(page.locator('form button[type="submit"], form button').first());
 
     await expect(error).toBeVisible();
     await expect(submitButton).toBeVisible();
 
-    /*
-     * Compare DOM positions instead of relying on screenshot
-     * interpretation.
-     */
     const errorBox = await error.boundingBox();
     const buttonBox = await submitButton.boundingBox();
 
     expect(errorBox).not.toBeNull();
     expect(buttonBox).not.toBeNull();
-
     expect(errorBox!.y).toBeLessThan(buttonBox!.y);
   });
 
   test('TC_FR02_16 - Password characters are hidden', async ({
     page,
   }) => {
+    const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_16')!;
     const passwordInput = page.locator(
       'input[name="password"], input[type="password"]'
-    ).first();
+    ).or(page.locator('form input').nth(1));
 
-    await passwordInput.fill(VALID_PASSWORD);
-
-    await expect(passwordInput).toHaveAttribute(
-      'type',
-      'password'
-    );
+    await passwordInput.fill(credentials.validUser.password);
+    await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
   });
 
   test('TC_FR02_17 - Tab order follows the login form layout', async ({
     page,
   }) => {
-    /*
-     * Start from the beginning of the page.
-     */
+    const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_17')!;
     await page.keyboard.press('Tab');
 
     const focusedElements: string[] = [];
 
-    for (let i = 0; i < 6; i++) {
+    for (let i = 0; i < (testCase.maxTabs ?? 6); i++) {
       const active = page.locator(':focus');
 
       if (await active.count() === 0) {
@@ -519,9 +387,7 @@ test.describe('FR-02 - Login and Lock Account', () => {
 
       const name = await active.getAttribute('name');
       const type = await active.getAttribute('type');
-      const text = (
-        await active.textContent()
-      )?.trim();
+      const text = (await active.textContent())?.trim();
 
       focusedElements.push(
         `${tagName}[name=${name ?? ''}][type=${type ?? ''}]${text ?? ''}`
@@ -530,15 +396,8 @@ test.describe('FR-02 - Login and Lock Account', () => {
       await page.keyboard.press('Tab');
     }
 
-    /*
-     * The exact number of focusable elements depends on the
-     * implementation, but the login form controls should
-     * participate in keyboard navigation.
-     */
     expect(focusedElements.length).toBeGreaterThan(0);
-
     const focusSequence = focusedElements.join(' -> ');
-
     expect(focusSequence).toContain('input');
   });
 });

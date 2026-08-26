@@ -1,0 +1,263 @@
+{
+  "credentials": {
+    "admin": {
+      "email": "admin@eshop.com",
+      "password": "Admin123!"
+    }
+  },
+  "urls": {
+    "baseUrl": "http://localhost:5174",
+    "login": "http://localhost:5174/login",
+    "import": "http://localhost:5174/admin/import-products",
+    "products": "http://localhost:5174/admin/products"
+  },
+  "headers": {
+    "valid": "name,price,description,imageUrl,category_id",
+    "missing": "name,price",
+    "invalid": "product_name,price,description,imageUrl,category_id"
+  },
+  "testCases": {
+    "TC_FR16_01": {
+      "id": "TC_FR16_01",
+      "title": "Admin can access Import Products",
+      "requirement": "FR-12 / FR-16 Authorization",
+      "targetUrl": "http://localhost:5174/admin/import-products"
+    },
+    "TC_FR16_02": {
+      "id": "TC_FR16_02",
+      "title": "Non-admin cannot import products",
+      "requirement": "FR-12 Authorization",
+      "targetUrl": "http://localhost:5174/admin/import-products"
+    },
+    "TC_FR16_03": {
+      "id": "TC_FR16_03",
+      "title": "Import valid .csv file",
+      "requirement": "FR-16 CSV File Extension (E1)",
+      "filename": "products.csv",
+      "headerType": "valid",
+      "rows": [
+        "{prefix},1000,Desc,http://url.com,1"
+      ],
+      "prefix": "FR16-CSV"
+    },
+    "TC_FR16_04": {
+      "id": "TC_FR16_04",
+      "title": "Reject non-.csv file",
+      "requirement": "FR-16 CSV File Extension (E2, B_FR16_01)",
+      "filename": "products.xlsx",
+      "headerType": "valid",
+      "rows": [
+        "FR16-XLSX,1000,Desc,http://url.com,1"
+      ]
+    },
+    "TC_FR16_05": {
+      "id": "TC_FR16_05",
+      "title": "Accept valid CSV header",
+      "requirement": "FR-16 CSV Header (E3)",
+      "filename": "valid-header.csv",
+      "headerType": "valid",
+      "rows": [
+        "{prefix},1000,Desc,http://url.com,1"
+      ],
+      "prefix": "FR16-HEADER"
+    },
+    "TC_FR16_06": {
+      "id": "TC_FR16_06",
+      "title": "Reject CSV with missing header fields",
+      "requirement": "FR-16 CSV Header (E4, B_FR16_02)",
+      "filename": "missing-header.csv",
+      "headerType": "missing",
+      "rows": [
+        "FR16-MISSING-HEADER,1000"
+      ],
+      "expectedReasonPattern": "header|column|field|structure|format|cấu trúc"
+    },
+    "TC_FR16_07": {
+      "id": "TC_FR16_07",
+      "title": "Reject CSV with incorrect header name",
+      "requirement": "FR-16 CSV Header (C2)",
+      "filename": "invalid-header.csv",
+      "headerType": "invalid",
+      "rows": [
+        "FR16-INVALID-HEADER,1000,Desc,http://url.com,1"
+      ],
+      "expectedReasonPattern": "header|column|field|structure|format"
+    },
+    "TC_FR16_08": {
+      "id": "TC_FR16_08",
+      "title": "Parse quoted comma in CSV field correctly",
+      "requirement": "FR-16 RFC 4180 Parsing (E5, C3, B_FR16_03)",
+      "filename": "quoted-comma.csv",
+      "headerType": "valid",
+      "baseProductName": "iPhone, 13",
+      "rowTemplate": "\"{productName}\",1000,\"Desc, iPhone 13\",http://url.com,1"
+    },
+    "TC_FR16_09": {
+      "id": "TC_FR16_09",
+      "title": "Reject unquoted comma in CSV field",
+      "requirement": "FR-16 RFC 4180 Parsing (E6, C3, B_FR16_03)",
+      "filename": "unquoted-comma.csv",
+      "headerType": "valid",
+      "rows": [
+        "iPhone, 13,1000,\"Desc\",http://url.com,1"
+      ]
+    },
+    "TC_FR16_10": {
+      "id": "TC_FR16_10",
+      "title": "Accept product name with minimum length 1",
+      "requirement": "FR-16 Name Validation (E7, BVA2)",
+      "filename": "name-min-length.csv",
+      "headerType": "valid",
+      "prefix": "A",
+      "rowTemplate": "{productName},1000,Desc,http://url.com,1"
+    },
+    "TC_FR16_11": {
+      "id": "TC_FR16_11",
+      "title": "Reject empty product name",
+      "requirement": "FR-16 Name Validation (E8, BVA1)",
+      "filename": "empty-name.csv",
+      "headerType": "valid",
+      "rows": [
+        ",1000,Desc,http://url.com,1"
+      ],
+      "expectedReasonPattern": "name.*required|name.*empty|name.*blank|tên.*rỗng|tên.*bắt buộc"
+    },
+    "TC_FR16_12": {
+      "id": "TC_FR16_12",
+      "title": "Reject price equal to 0",
+      "requirement": "FR-16 Price Validation (E10, BVA3, B_FR16_04)",
+      "filename": "price-zero.csv",
+      "headerType": "valid",
+      "rows": [
+        "FR16-PRICE-ZERO,0,Desc,http://url.com,1"
+      ],
+      "expectedReasonPattern": "price.*positive|price.*greater|price.*zero|giá.*lớn hơn|giá.*0"
+    },
+    "TC_FR16_13": {
+      "id": "TC_FR16_13",
+      "title": "Accept price equal to 0.01",
+      "requirement": "FR-16 Price Validation (E9, BVA4)",
+      "filename": "price-0-01.csv",
+      "headerType": "valid",
+      "prefix": "FR16-PRICE-001",
+      "rowTemplate": "{productName},0.01,Desc,http://url.com,1"
+    },
+    "TC_FR16_14": {
+      "id": "TC_FR16_14",
+      "title": "Reject negative price -0.01",
+      "requirement": "FR-16 Price Validation (E10, BVA5, B_FR16_04)",
+      "filename": "price-negative.csv",
+      "headerType": "valid",
+      "rows": [
+        "FR16-PRICE-NEGATIVE,-0.01,Desc,http://url.com,1"
+      ],
+      "expectedReasonPattern": "price.*positive|price.*greater|negative|giá.*lớn hơn|giá.*không hợp lệ"
+    },
+    "TC_FR16_15": {
+      "id": "TC_FR16_15",
+      "title": "Reject non-numeric price",
+      "requirement": "FR-16 Price Validation (Non-numeric)",
+      "filename": "price-nonnumeric.csv",
+      "headerType": "valid",
+      "rows": [
+        "FR16-PRICE-NONNUMERIC,abc,Desc,http://url.com,1"
+      ],
+      "expectedReasonPattern": "price|number|numeric|giá|số"
+    },
+    "TC_FR16_16": {
+      "id": "TC_FR16_16",
+      "title": "Rollback entire import when middle row is invalid",
+      "requirement": "FR-16 Atomic Rollback",
+      "filename": "rollback-middle.csv",
+      "headerType": "valid",
+      "prefixes": {
+        "productA": "FR16-ROLLBACK-A",
+        "productB": "FR16-ROLLBACK-B",
+        "productC": "FR16-ROLLBACK-C"
+      },
+      "rowTemplates": [
+        "{productA},1000,Desc A,http://url-a.com,1",
+        "{productB},0,Desc B,http://url-b.com,1",
+        "{productC},2000,Desc C,http://url-c.com,1"
+      ]
+    },
+    "TC_FR16_17": {
+      "id": "TC_FR16_17",
+      "title": "Rollback previous rows when last row is invalid",
+      "requirement": "FR-16 Atomic Rollback",
+      "filename": "rollback-last.csv",
+      "headerType": "valid",
+      "prefixes": {
+        "productA": "FR16-ROLLBACK-LAST-A",
+        "productB": "FR16-ROLLBACK-LAST-B",
+        "productC": "FR16-ROLLBACK-LAST-C"
+      },
+      "rowTemplates": [
+        "{productA},1000,Desc A,http://url-a.com,1",
+        "{productB},2000,Desc B,http://url-b.com,1",
+        "{productC},0,Desc C,http://url-c.com,1"
+      ]
+    },
+    "TC_FR16_18": {
+      "id": "TC_FR16_18",
+      "title": "Multiple errors cause complete rollback",
+      "requirement": "FR-16 Multiple Errors & Rollback",
+      "filename": "multiple-errors.csv",
+      "headerType": "valid",
+      "prefixes": {
+        "productA": "FR16-MULTI-A",
+        "productC": "FR16-MULTI-C"
+      },
+      "rowTemplates": [
+        "{productA},1000,Desc A,http://url-a.com,1",
+        ",2000,Desc B,http://url-b.com,1",
+        "{productC},0,Desc C,http://url-c.com,1"
+      ],
+      "expectedReasonPatterns": [
+        "name.*required|name.*empty|name.*blank|tên.*rỗng|tên.*bắt buộc",
+        "price.*positive|price.*greater|price.*zero|giá.*lớn hơn|giá.*0"
+      ]
+    },
+    "TC_FR16_19": {
+      "id": "TC_FR16_19",
+      "title": "Display successful import count",
+      "requirement": "FR-16 Result Reporting (Success)",
+      "filename": "successful-report.csv",
+      "headerType": "valid",
+      "prefixes": {
+        "productA": "FR16-REPORT-A",
+        "productB": "FR16-REPORT-B",
+        "productC": "FR16-REPORT-C"
+      },
+      "rowTemplates": [
+        "{productA},1000,Desc A,http://url-a.com,1",
+        "{productB},2000,Desc B,http://url-b.com,1",
+        "{productC},3000,Desc C,http://url-c.com,1"
+      ],
+      "expectedSuccessCount": 3,
+      "expectedErrorCount": 0
+    },
+    "TC_FR16_20": {
+      "id": "TC_FR16_20",
+      "title": "Display error count and error reasons",
+      "requirement": "FR-16 Result Reporting & Rollback (Errors)",
+      "filename": "error-report.csv",
+      "headerType": "valid",
+      "prefixes": {
+        "productA": "FR16-REPORT-ERROR-A",
+        "productC": "FR16-REPORT-ERROR-C"
+      },
+      "rowTemplates": [
+        "{productA},1000,Desc A,http://url-a.com,1",
+        ",2000,Desc B,http://url-b.com,1",
+        "{productC},0,Desc C,http://url-c.com,1"
+      ],
+      "expectedSuccessCount": 0,
+      "expectedErrorCount": 2,
+      "expectedReasonPatterns": [
+        "name.*required|name.*empty|name.*blank|tên.*rỗng|tên.*bắt buộc",
+        "price.*positive|price.*greater|price.*zero|giá.*lớn hơn|giá.*0"
+      ]
+    }
+  }
+}
