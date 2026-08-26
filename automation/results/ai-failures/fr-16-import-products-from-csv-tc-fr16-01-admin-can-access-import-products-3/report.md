@@ -1,10 +1,10 @@
 # Error Context: TC_FR16_01 - Admin can access Import Products
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:411
+/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:410
 
-3) tests/fr16.spec.ts:411:7 › FR-16 - Import Products from CSV › TC_FR16_01 - Admin can access Import Products
-Duration: 5307ms
+3) tests/fr16.spec.ts:410:7 › FR-16 - Import Products from CSV › TC_FR16_01 - Admin can access Import Products
+Duration: 5336ms
 
 ### Error
 ```
@@ -34,20 +34,20 @@ Call log:
   - Expect "toBeVisible" with timeout 5000ms
   - waiting for locator('input[type="email"], input[name="email"], input[name="username"]').first()
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:136:28)
-    at loginAsAdmin (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:161:9)
+    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:135:28)
+    at loginAsAdmin (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:160:9)
     at /home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:414:9
 ```
 
 ### Code Location
 ```typescript
-  134 |   ).first();
-  135 |
-> 136 |   await expect(emailInput).toBeVisible();
+  133 |   ).first();
+  134 |
+> 135 |   await expect(emailInput).toBeVisible();
       |                            ^
-  137 |   await expect(passwordInput).toBeVisible();
-  138 |
-  139 |   await emailInput.fill(email);
+  136 |   await expect(passwordInput).toBeVisible();
+  137 |
+  138 |   await emailInput.fill(email);
 ```
 
 ### Page State When Failed
