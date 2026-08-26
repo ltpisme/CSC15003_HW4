@@ -1,23 +1,23 @@
 # Error Context: TC_FR02_03 - Reject login with non-existing email
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:137
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:125
 
-9) tests/fr02.spec.ts:137:7 › FR-02 - Login and Lock Account › TC_FR02_03 - Reject login with non-existing email
-Duration: 5174ms
+9) tests/fr02.spec.ts:125:7 › FR-02 - Login and Lock Account › TC_FR02_03 - Reject login with non-existing email
+Duration: 5194ms
 
 ### Error
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: locator('input[type="email"], input[name="email"], input[name="username"]').first()
+Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="email"], input[name="email"], input[name="username"]').first()
+  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
 
 ```
 
@@ -25,28 +25,28 @@ Call log:
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: locator('input[type="email"], input[name="email"], input[name="username"]').first()
+Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="email"], input[name="email"], input[name="username"]').first()
+  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:40:28)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:140:11
+    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:129:5
 ```
 
 ### Code Location
 ```typescript
-  38 |   ).first();
-  39 |
-> 40 |   await expect(emailInput).toBeVisible();
-     |                            ^
-  41 |   await expect(passwordInput).toBeVisible();
-  42 |
-  43 |   await emailInput.fill(email);
+  37 |
+  38 |   await expect(emailInput).toBeVisible();
+> 39 |   await expect(passwordInput).toBeVisible();
+     |                               ^
+  40 |
+  41 |   await emailInput.fill(email);
+  42 |   await passwordInput.fill(password);
 ```
 
 ### Page State When Failed

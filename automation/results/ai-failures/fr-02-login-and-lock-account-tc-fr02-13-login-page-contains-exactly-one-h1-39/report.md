@@ -1,10 +1,10 @@
 # Error Context: TC_FR02_13 - Login page contains exactly one h1
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:413
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:306
 
-39) tests/fr02.spec.ts:413:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
-Duration: 5274ms
+39) tests/fr02.spec.ts:306:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
+Duration: 5263ms
 
 ### Error
 ```
@@ -38,18 +38,18 @@ Call log:
     14 × locator resolved to 0 elements
        - unexpected value "0"
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:418:22
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:312:22
 ```
 
 ### Code Location
 ```typescript
-  416 |     const h1 = page.locator('h1');
-  417 |
-> 418 |     await expect(h1).toHaveCount(1);
+  310 |     const h1 = page.locator('h1');
+  311 |
+> 312 |     await expect(h1).toHaveCount(testCase.expectedH1Count);
       |                      ^
-  419 |
-  420 |     await expect(h1.first()).toBeVisible();
-  421 |   });
+  313 |     await expect(h1.first()).toBeVisible();
+  314 |   });
+  315 |
 ```
 
 ### Page State When Failed

@@ -1,51 +1,55 @@
 # Error Context: TC_FR02_11 - Email field uses type=email
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:383
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:282
 
-33) tests/fr02.spec.ts:383:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
-Duration: 5246ms
+33) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
+Duration: 5330ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[name="email"], input[type="email"]').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Expected: "email"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"]').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[name="email"], input[type="email"]').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Expected: "email"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"]').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:390:30
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:291:30
 ```
 
 ### Code Location
 ```typescript
-  388 |     ).first();
-  389 |
-> 390 |     await expect(emailInput).toBeVisible();
+  289 |
+  290 |     await expect(emailInput).toBeVisible();
+> 291 |     await expect(emailInput).toHaveAttribute('type', testCase.expectedType);
       |                              ^
-  391 |
-  392 |     await expect(emailInput).toHaveAttribute(
-  393 |       'type',
+  292 |   });
+  293 |
+  294 |   test('TC_FR02_12 - Password field uses type=password', async ({
 ```
 
 ### Page State When Failed

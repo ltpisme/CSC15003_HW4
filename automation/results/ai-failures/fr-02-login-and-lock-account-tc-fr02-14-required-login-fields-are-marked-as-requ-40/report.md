@@ -1,23 +1,23 @@
 # Error Context: TC_FR02_14 - Required login fields are marked as required
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:423
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:316
 
-40) tests/fr02.spec.ts:423:7 › FR-02 - Login and Lock Account › TC_FR02_14 - Required login fields are marked as required
-Duration: 5140ms
+40) tests/fr02.spec.ts:316:7 › FR-02 - Login and Lock Account › TC_FR02_14 - Required login fields are marked as required
+Duration: 5178ms
 
 ### Error
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: locator('input[name="email"], input[type="email"], input[name="username"]').first()
+Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], input[name="username"]').first()
+  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
 
 ```
 
@@ -25,27 +25,27 @@ Call log:
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: locator('input[name="email"], input[type="email"], input[name="username"]').first()
+Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], input[name="username"]').first()
+  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:434:30
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:328:33
 ```
 
 ### Code Location
 ```typescript
-  432 |     ).first();
-  433 |
-> 434 |     await expect(emailInput).toBeVisible();
-      |                              ^
-  435 |     await expect(passwordInput).toBeVisible();
-  436 |
-  437 |     /*
+  326 |
+  327 |     await expect(emailInput).toBeVisible();
+> 328 |     await expect(passwordInput).toBeVisible();
+      |                                 ^
+  329 |
+  330 |     await expect(emailInput).toHaveAttribute('required', '');
+  331 |     await expect(passwordInput).toHaveAttribute('required', '');
 ```
 
 ### Page State When Failed
