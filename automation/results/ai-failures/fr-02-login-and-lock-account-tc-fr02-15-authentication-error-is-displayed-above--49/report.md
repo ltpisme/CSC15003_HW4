@@ -3,8 +3,8 @@
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:334
 
-43) tests/fr02.spec.ts:334:7 › FR-02 - Login and Lock Account › TC_FR02_15 - Authentication error is displayed above submit button
-Duration: 455ms
+49) tests/fr02.spec.ts:334:7 › FR-02 - Login and Lock Account › TC_FR02_15 - Authentication error is displayed above submit button
+Duration: 507ms
 
 ### Error
 ```

@@ -1,10 +1,10 @@
-# Error Context: TC_FR02_12 - Password field uses type=password
+# Error Context: TC_FR02_16 - Password characters are hidden
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:294
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:356
 
-36) tests/fr02.spec.ts:294:7 › FR-02 - Login and Lock Account › TC_FR02_12 - Password field uses type=password
-Duration: 5391ms
+46) tests/fr02.spec.ts:356:7 › FR-02 - Login and Lock Account › TC_FR02_16 - Password characters are hidden
+Duration: 5366ms
 
 ### Error
 ```
@@ -18,7 +18,7 @@ Timeout:  5000ms
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
   - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
-    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
 ```
@@ -35,21 +35,21 @@ Timeout:  5000ms
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
   - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
-    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:303:33
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:365:33
 ```
 
 ### Code Location
 ```typescript
-  301 |
-  302 |     await expect(passwordInput).toBeVisible();
-> 303 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+  363 |
+  364 |     await passwordInput.fill(credentials.validUser.password);
+> 365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
       |                                 ^
-  304 |   });
-  305 |
-  306 |   test('TC_FR02_13 - Login page contains exactly one h1', async ({
+  366 |   });
+  367 |
+  368 |   test('TC_FR02_17 - Tab order follows the login form layout', async ({
 ```
 
 ### Page State When Failed

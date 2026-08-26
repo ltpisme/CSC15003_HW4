@@ -4,32 +4,52 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:356
 
 50) tests/fr02.spec.ts:356:7 › FR-02 - Login and Lock Account › TC_FR02_16 - Password characters are hidden
-Duration: 30023ms
+Duration: 5944ms
 
 ### Error
 ```
-Test timeout of 30000ms exceeded.
----
-Error: locator.fill: Test timeout of 30000ms exceeded.
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
 Call log:
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
 ```
 
 ### Stack Trace
 ```
-at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:364:25
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
+
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:365:33
 ```
 
 ### Code Location
 ```typescript
-  362 |     ).first();
   363 |
-> 364 |     await passwordInput.fill(credentials.validUser.password);
-      |                         ^
-  365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+  364 |     await passwordInput.fill(credentials.validUser.password);
+> 365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+      |                                 ^
   366 |   });
   367 |
+  368 |   test('TC_FR02_17 - Tab order follows the login form layout', async ({
 ```
 
 ### Page State When Failed

@@ -3,8 +3,8 @@
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:282
 
-33) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
-Duration: 5351ms
+37) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
+Duration: 5295ms
 
 ### Error
 ```

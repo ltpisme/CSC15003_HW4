@@ -4,50 +4,48 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:160
 
 15) tests/fr02.spec.ts:160:7 › FR-02 - Login and Lock Account › TC_FR02_05 - First failed login attempt does not lock account
-Duration: 5181ms
+Duration: 5359ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:166:7
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:176:28
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  174 |     // Account should still be usable with valid credentials
+  175 |     await successfulLogin(page);
+> 176 |     await expect(page).not.toHaveURL(/\/login$/);
+      |                            ^
+  177 |   });
+  178 |
+  179 |   test('TC_FR02_06 - Second consecutive failed login attempt does not lock account', async ({
 ```
 
 ### Page State When Failed

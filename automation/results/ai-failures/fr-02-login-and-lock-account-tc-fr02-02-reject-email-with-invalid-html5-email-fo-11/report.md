@@ -3,8 +3,8 @@
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:102
 
-6) tests/fr02.spec.ts:102:7 › FR-02 - Login and Lock Account › TC_FR02_02 - Reject email with invalid HTML5 email format
-Duration: 5342ms
+11) tests/fr02.spec.ts:102:7 › FR-02 - Login and Lock Account › TC_FR02_02 - Reject email with invalid HTML5 email format
+Duration: 5396ms
 
 ### Error
 ```

@@ -2,352 +2,124 @@
 
 ## Summary
 - **Total Tests**: 51
-- **Passed**: 3 ✅
-- **Failed**: 48 ❌
+- **Passed**: 21 ✅
+- **Failed**: 30 ❌
 - **Skipped**: 0 ⏭️
-- **Duration**: 157.33s
+- **Duration**: 90.58s
 
 ## Failed Tests Quick Links
 
-### ⏱️ Timeout Failures (48)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-3/report.md)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-3/report.md)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-5/report.md)
+### ⏱️ Timeout Failures (24)
 - [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-6/report.md)
-- [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-6/report.md)
-- [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-8/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-9/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-10/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-11/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-12/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-13/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-14/report.md)
+- [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-7/report.md)
+- [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-11/report.md)
 - [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-15/report.md)
 - [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-16/report.md)
 - [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-17/report.md)
 - [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--18/report.md)
-- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--19/report.md)
-- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-20/report.md)
-- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--21/report.md)
-- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-22/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-23/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-24/report.md)
-- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-25/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--26/report.md)
+- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--20/report.md)
+- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--24/report.md)
 - [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--27/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-28/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-29/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-30/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--31/report.md)
-- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-32/report.md)
+- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--29/report.md)
+- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-31/report.md)
+- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--32/report.md)
 - [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-33/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-34/report.md)
 - [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-35/report.md)
 - [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-36/report.md)
-- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-37/report.md)
-- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-38/report.md)
-- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-39/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-40/report.md)
-- [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-41/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-42/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--43/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--44/report.md)
-- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-45/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-46/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--47/report.md)
-- [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-48/report.md)
-- [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-49/report.md)
+- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-37/report.md)
+- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-38/report.md)
+- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-41/report.md)
+- [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-44/report.md)
+- [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-45/report.md)
+- [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-46/report.md)
+- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-47/report.md)
 - [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-50/report.md)
 
-### 🔍 Element Not Found (36)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-3/report.md)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-3/report.md)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-5/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-9/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-10/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-11/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-12/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-13/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-14/report.md)
+### ✗ Assertion Failures (27)
+- [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-6/report.md)
+- [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-7/report.md)
+- [TC_FR02_02 - Reject email with invalid HTML5 email format](./fr-02-login-and-lock-account-tc-fr02-02-reject-email-with-invalid-html5-email-fo-11/report.md)
 - [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-15/report.md)
 - [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-16/report.md)
 - [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-17/report.md)
 - [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--18/report.md)
-- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--19/report.md)
-- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-20/report.md)
-- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--21/report.md)
+- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-19/report.md)
+- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--20/report.md)
 - [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-22/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-23/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-24/report.md)
+- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--24/report.md)
 - [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-25/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--26/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--27/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-28/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-29/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-30/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--31/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-34/report.md)
-- [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-35/report.md)
-- [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-36/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-40/report.md)
-- [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-41/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-42/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--43/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--44/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-46/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--47/report.md)
-
-### ✗ Assertion Failures (42)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-3/report.md)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-3/report.md)
-- [TC_FR02_01 - Login successfully with valid credentials](./fr-02-login-and-lock-account-tc-fr02-01-login-successfully-with-valid-credential-5/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-9/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-10/report.md)
-- [TC_FR02_03 - Reject login with non-existing email](./fr-02-login-and-lock-account-tc-fr02-03-reject-login-with-non-existing-email-11/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-12/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-13/report.md)
-- [TC_FR02_04 - Reject login with incorrect password](./fr-02-login-and-lock-account-tc-fr02-04-reject-login-with-incorrect-password-14/report.md)
-- [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-15/report.md)
-- [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-16/report.md)
-- [TC_FR02_05 - First failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-05-first-failed-login-attempt-does-not-lock-17/report.md)
-- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--18/report.md)
-- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--19/report.md)
-- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-20/report.md)
-- [TC_FR02_06 - Second consecutive failed login attempt does not lock account](./fr-02-login-and-lock-account-tc-fr02-06-second-consecutive-failed-login-attempt--21/report.md)
-- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-22/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-23/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-24/report.md)
-- [TC_FR02_07 - Third consecutive failed login attempt locks account](./fr-02-login-and-lock-account-tc-fr02-07-third-consecutive-failed-login-attempt-l-25/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--26/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--27/report.md)
-- [TC_FR02_08 - Correct password is rejected while account is locked](./fr-02-login-and-lock-account-tc-fr02-08-correct-password-is-rejected-while-accou-28/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-29/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-30/report.md)
-- [TC_FR02_09 - Account can login again after 30-second lock period](./fr-02-login-and-lock-account-tc-fr02-09-account-can-login-again-after-30-second--31/report.md)
-- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-32/report.md)
+- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-31/report.md)
 - [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-33/report.md)
-- [TC_FR02_10 - Account remains locked while lock period is active](./fr-02-login-and-lock-account-tc-fr02-10-account-remains-locked-while-lock-period-34/report.md)
 - [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-35/report.md)
 - [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-36/report.md)
-- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-37/report.md)
-- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-38/report.md)
-- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-39/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-40/report.md)
-- [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-41/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-42/report.md)
+- [TC_FR02_11 - Email field uses type=email](./fr-02-login-and-lock-account-tc-fr02-11-email-field-uses-type-email-37/report.md)
+- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-38/report.md)
+- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--40/report.md)
+- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-41/report.md)
 - [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--43/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--44/report.md)
-- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-45/report.md)
-- [TC_FR02_14 - Required login fields are marked as required](./fr-02-login-and-lock-account-tc-fr02-14-required-login-fields-are-marked-as-requ-46/report.md)
-- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--47/report.md)
+- [TC_FR02_12 - Password field uses type=password](./fr-02-login-and-lock-account-tc-fr02-12-password-field-uses-type-password-44/report.md)
+- [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-45/report.md)
+- [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-46/report.md)
+- [TC_FR02_13 - Login page contains exactly one h1](./fr-02-login-and-lock-account-tc-fr02-13-login-page-contains-exactly-one-h1-47/report.md)
+- [TC_FR02_15 - Authentication error is displayed above submit button](./fr-02-login-and-lock-account-tc-fr02-15-authentication-error-is-displayed-above--49/report.md)
+- [TC_FR02_16 - Password characters are hidden](./fr-02-login-and-lock-account-tc-fr02-16-password-characters-are-hidden-50/report.md)
 
 ---
 
 # Detailed Failures
 
-# Error Context: TC_FR02_01 - Login successfully with valid credentials
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:91
-
-3) tests/fr02.spec.ts:91:7 › FR-02 - Login and Lock Account › TC_FR02_01 - Login successfully with valid credentials
-Duration: 5419ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:95:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_01 - Login successfully with valid credentials
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:91
-
-3) tests/fr02.spec.ts:91:7 › FR-02 - Login and Lock Account › TC_FR02_01 - Login successfully with valid credentials
-Duration: 5419ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:95:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_01 - Login successfully with valid credentials
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:91
-
-5) tests/fr02.spec.ts:91:7 › FR-02 - Login and Lock Account › TC_FR02_01 - Login successfully with valid credentials
-Duration: 5961ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:95:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
 # Error Context: TC_FR02_02 - Reject email with invalid HTML5 email format
 
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:102
 
 6) tests/fr02.spec.ts:102:7 › FR-02 - Login and Lock Account › TC_FR02_02 - Reject email with invalid HTML5 email format
-Duration: 30017ms
+Duration: 5342ms
 
 ### Error
 ```
-Test timeout of 30000ms exceeded.
----
-Error: locator.fill: Test timeout of 30000ms exceeded.
+Error: expect(locator).toHaveJSProperty(expected) failed
+
+Locator:  locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+Expected: false
+Received: true
+Timeout:  5000ms
+
 Call log:
-  - waiting for locator('input[type="password"], input[name="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveJSProperty" with timeout 5000ms
+  - waiting for locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+    14 × locator resolved to <input required="" type="text" value="invalid-email" class="w-full border p-2 rounded"/>
+       - unexpected value "true"
 
 ```
 
 ### Stack Trace
 ```
-at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:117:25
+Error: expect(locator).toHaveJSProperty(expected) failed
+
+Locator:  locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+Expected: false
+Received: true
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveJSProperty" with timeout 5000ms
+  - waiting for locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+    14 × locator resolved to <input required="" type="text" value="invalid-email" class="w-full border p-2 rounded"/>
+       - unexpected value "true"
+
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:121:30
 ```
 
 ### Code Location
 ```typescript
-  115 |     ).first();
-  116 |
-> 117 |     await passwordInput.fill(testCase.password);
-      |                         ^
-  118 |     await submitLogin(page);
   119 |
   120 |     // HTML5 validation should prevent form submission
+> 121 |     await expect(emailInput).toHaveJSProperty('validity.valid', false);
+      |                              ^
+  122 |     await expect(page).toHaveURL(/\/login$/);
+  123 |   });
+  124 |
 ```
 
 ### Page State When Failed
@@ -361,33 +133,53 @@ at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:117:25
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:102
 
-6) tests/fr02.spec.ts:102:7 › FR-02 - Login and Lock Account › TC_FR02_02 - Reject email with invalid HTML5 email format
-Duration: 30017ms
+7) tests/fr02.spec.ts:102:7 › FR-02 - Login and Lock Account › TC_FR02_02 - Reject email with invalid HTML5 email format
+Duration: 5487ms
 
 ### Error
 ```
-Test timeout of 30000ms exceeded.
----
-Error: locator.fill: Test timeout of 30000ms exceeded.
+Error: expect(locator).toHaveJSProperty(expected) failed
+
+Locator:  locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+Expected: false
+Received: true
+Timeout:  5000ms
+
 Call log:
-  - waiting for locator('input[type="password"], input[name="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveJSProperty" with timeout 5000ms
+  - waiting for locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+    14 × locator resolved to <input required="" type="text" value="invalid-email" class="w-full border p-2 rounded"/>
+       - unexpected value "true"
 
 ```
 
 ### Stack Trace
 ```
-at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:117:25
+Error: expect(locator).toHaveJSProperty(expected) failed
+
+Locator:  locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+Expected: false
+Received: true
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveJSProperty" with timeout 5000ms
+  - waiting for locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+    14 × locator resolved to <input required="" type="text" value="invalid-email" class="w-full border p-2 rounded"/>
+       - unexpected value "true"
+
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:121:30
 ```
 
 ### Code Location
 ```typescript
-  115 |     ).first();
-  116 |
-> 117 |     await passwordInput.fill(testCase.password);
-      |                         ^
-  118 |     await submitLogin(page);
   119 |
   120 |     // HTML5 validation should prevent form submission
+> 121 |     await expect(emailInput).toHaveJSProperty('validity.valid', false);
+      |                              ^
+  122 |     await expect(page).toHaveURL(/\/login$/);
+  123 |   });
+  124 |
 ```
 
 ### Page State When Failed
@@ -401,375 +193,53 @@ at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:117:25
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:102
 
-8) tests/fr02.spec.ts:102:7 › FR-02 - Login and Lock Account › TC_FR02_02 - Reject email with invalid HTML5 email format
-Duration: 30020ms
+11) tests/fr02.spec.ts:102:7 › FR-02 - Login and Lock Account › TC_FR02_02 - Reject email with invalid HTML5 email format
+Duration: 5396ms
 
 ### Error
 ```
-Test timeout of 30000ms exceeded.
----
-Error: locator.fill: Test timeout of 30000ms exceeded.
+Error: expect(locator).toHaveJSProperty(expected) failed
+
+Locator:  locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+Expected: false
+Received: true
+Timeout:  5000ms
+
 Call log:
-  - waiting for locator('input[type="password"], input[name="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveJSProperty" with timeout 5000ms
+  - waiting for locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+    14 × locator resolved to <input required="" type="text" value="invalid-email" class="w-full border p-2 rounded"/>
+       - unexpected value "true"
 
 ```
 
 ### Stack Trace
 ```
-at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:117:25
+Error: expect(locator).toHaveJSProperty(expected) failed
+
+Locator:  locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+Expected: false
+Received: true
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveJSProperty" with timeout 5000ms
+  - waiting for locator('input[type="email"], input[name="email"]').or(locator('form input').first())
+    14 × locator resolved to <input required="" type="text" value="invalid-email" class="w-full border p-2 rounded"/>
+       - unexpected value "true"
+
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:121:30
 ```
 
 ### Code Location
 ```typescript
-  115 |     ).first();
-  116 |
-> 117 |     await passwordInput.fill(testCase.password);
-      |                         ^
-  118 |     await submitLogin(page);
   119 |
   120 |     // HTML5 validation should prevent form submission
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_03 - Reject login with non-existing email
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:125
-
-9) tests/fr02.spec.ts:125:7 › FR-02 - Login and Lock Account › TC_FR02_03 - Reject login with non-existing email
-Duration: 5194ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:129:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_03 - Reject login with non-existing email
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:125
-
-10) tests/fr02.spec.ts:125:7 › FR-02 - Login and Lock Account › TC_FR02_03 - Reject login with non-existing email
-Duration: 5331ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:129:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_03 - Reject login with non-existing email
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:125
-
-11) tests/fr02.spec.ts:125:7 › FR-02 - Login and Lock Account › TC_FR02_03 - Reject login with non-existing email
-Duration: 5849ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:129:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_04 - Reject login with incorrect password
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:143
-
-12) tests/fr02.spec.ts:143:7 › FR-02 - Login and Lock Account › TC_FR02_04 - Reject login with incorrect password
-Duration: 5193ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:147:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_04 - Reject login with incorrect password
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:143
-
-13) tests/fr02.spec.ts:143:7 › FR-02 - Login and Lock Account › TC_FR02_04 - Reject login with incorrect password
-Duration: 5319ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:147:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_04 - Reject login with incorrect password
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:143
-
-14) tests/fr02.spec.ts:143:7 › FR-02 - Login and Lock Account › TC_FR02_04 - Reject login with incorrect password
-Duration: 5814ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:147:5
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+> 121 |     await expect(emailInput).toHaveJSProperty('validity.valid', false);
+      |                              ^
+  122 |     await expect(page).toHaveURL(/\/login$/);
+  123 |   });
+  124 |
 ```
 
 ### Page State When Failed
@@ -784,50 +254,48 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:160
 
 15) tests/fr02.spec.ts:160:7 › FR-02 - Login and Lock Account › TC_FR02_05 - First failed login attempt does not lock account
-Duration: 5181ms
+Duration: 5359ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:166:7
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:176:28
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  174 |     // Account should still be usable with valid credentials
+  175 |     await successfulLogin(page);
+> 176 |     await expect(page).not.toHaveURL(/\/login$/);
+      |                            ^
+  177 |   });
+  178 |
+  179 |   test('TC_FR02_06 - Second consecutive failed login attempt does not lock account', async ({
 ```
 
 ### Page State When Failed
@@ -842,50 +310,48 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:160
 
 16) tests/fr02.spec.ts:160:7 › FR-02 - Login and Lock Account › TC_FR02_05 - First failed login attempt does not lock account
-Duration: 5319ms
+Duration: 5599ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:166:7
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:176:28
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  174 |     // Account should still be usable with valid credentials
+  175 |     await successfulLogin(page);
+> 176 |     await expect(page).not.toHaveURL(/\/login$/);
+      |                            ^
+  177 |   });
+  178 |
+  179 |   test('TC_FR02_06 - Second consecutive failed login attempt does not lock account', async ({
 ```
 
 ### Page State When Failed
@@ -900,50 +366,48 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:160
 
 17) tests/fr02.spec.ts:160:7 › FR-02 - Login and Lock Account › TC_FR02_05 - First failed login attempt does not lock account
-Duration: 5859ms
+Duration: 5555ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:166:7
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:176:28
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  174 |     // Account should still be usable with valid credentials
+  175 |     await successfulLogin(page);
+> 176 |     await expect(page).not.toHaveURL(/\/login$/);
+      |                            ^
+  177 |   });
+  178 |
+  179 |   test('TC_FR02_06 - Second consecutive failed login attempt does not lock account', async ({
 ```
 
 ### Page State When Failed
@@ -958,108 +422,48 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:179
 
 18) tests/fr02.spec.ts:179:7 › FR-02 - Login and Lock Account › TC_FR02_06 - Second consecutive failed login attempt does not lock account
-Duration: 5166ms
+Duration: 5495ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:185:7
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:196:28
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_06 - Second consecutive failed login attempt does not lock account
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:179
-
-19) tests/fr02.spec.ts:179:7 › FR-02 - Login and Lock Account › TC_FR02_06 - Second consecutive failed login attempt does not lock account
-Duration: 5311ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:185:7
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  194 |     await openLoginPage(page);
+  195 |     await successfulLogin(page);
+> 196 |     await expect(page).not.toHaveURL(/\/login$/);
+      |                            ^
+  197 |   });
+  198 |
+  199 |   test('TC_FR02_07 - Third consecutive failed login attempt locks account', async ({
 ```
 
 ### Page State When Failed
@@ -1073,51 +477,33 @@ Call log:
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:199
 
-20) tests/fr02.spec.ts:199:7 › FR-02 - Login and Lock Account › TC_FR02_07 - Third consecutive failed login attempt locks account
-Duration: 5228ms
+19) tests/fr02.spec.ts:199:7 › FR-02 - Login and Lock Account › TC_FR02_07 - Third consecutive failed login attempt locks account
+Duration: 470ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
+Received: false
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:205:7
+Received: false
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:219:7
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  217 |       errorText.includes('locked') ||
+  218 |       errorText.includes('30')
+> 219 |     ).toBeTruthy();
+      |       ^
+  220 |   });
+  221 |
+  222 |   test('TC_FR02_08 - Correct password is rejected while account is locked', async ({
 ```
 
 ### Page State When Failed
@@ -1131,51 +517,49 @@ Call log:
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:179
 
-21) tests/fr02.spec.ts:179:7 › FR-02 - Login and Lock Account › TC_FR02_06 - Second consecutive failed login attempt does not lock account
-Duration: 6006ms
+20) tests/fr02.spec.ts:179:7 › FR-02 - Login and Lock Account › TC_FR02_06 - Second consecutive failed login attempt does not lock account
+Duration: 5742ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:185:7
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:196:28
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  194 |     await openLoginPage(page);
+  195 |     await successfulLogin(page);
+> 196 |     await expect(page).not.toHaveURL(/\/login$/);
+      |                            ^
+  197 |   });
+  198 |
+  199 |   test('TC_FR02_07 - Third consecutive failed login attempt locks account', async ({
 ```
 
 ### Page State When Failed
@@ -1190,50 +574,32 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:199
 
 22) tests/fr02.spec.ts:199:7 › FR-02 - Login and Lock Account › TC_FR02_07 - Third consecutive failed login attempt locks account
-Duration: 5330ms
+Duration: 790ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
+Received: false
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:205:7
+Received: false
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:219:7
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  217 |       errorText.includes('locked') ||
+  218 |       errorText.includes('30')
+> 219 |     ).toBeTruthy();
+      |       ^
+  220 |   });
+  221 |
+  222 |   test('TC_FR02_08 - Correct password is rejected while account is locked', async ({
 ```
 
 ### Page State When Failed
@@ -1242,114 +608,54 @@ Call log:
 
 ---
 
-# Error Context: TC_FR02_08 - Correct password is rejected while account is locked
+# Error Context: TC_FR02_06 - Second consecutive failed login attempt does not lock account
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:222
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:179
 
-23) tests/fr02.spec.ts:222:7 › FR-02 - Login and Lock Account › TC_FR02_08 - Correct password is rejected while account is locked
-Duration: 5208ms
+24) tests/fr02.spec.ts:179:7 › FR-02 - Login and Lock Account › TC_FR02_06 - Second consecutive failed login attempt does not lock account
+Duration: 6491ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(page).not.toHaveURL(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
+Expected pattern: not /\/login$/
+Received string: "http://localhost:5173/login"
 Timeout: 5000ms
-Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "not toHaveURL" with timeout 5000ms
+    14 × locator resolved to <html lang="en">…</html>
+       - unexpected value "http://localhost:5173/login"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:228:7
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:196:28
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_08 - Correct password is rejected while account is locked
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:222
-
-24) tests/fr02.spec.ts:222:7 › FR-02 - Login and Lock Account › TC_FR02_08 - Correct password is rejected while account is locked
-Duration: 5387ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:228:7
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  194 |     await openLoginPage(page);
+  195 |     await successfulLogin(page);
+> 196 |     await expect(page).not.toHaveURL(/\/login$/);
+      |                            ^
+  197 |   });
+  198 |
+  199 |   test('TC_FR02_07 - Third consecutive failed login attempt locks account', async ({
 ```
 
 ### Page State When Failed
@@ -1364,108 +670,32 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:199
 
 25) tests/fr02.spec.ts:199:7 › FR-02 - Login and Lock Account › TC_FR02_07 - Third consecutive failed login attempt locks account
-Duration: 5935ms
+Duration: 1519ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
+Received: false
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:205:7
+Received: false
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:219:7
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_09 - Account can login again after 30-second lock period
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:242
-
-26) tests/fr02.spec.ts:242:7 › FR-02 - Login and Lock Account › TC_FR02_09 - Account can login again after 30-second lock period
-Duration: 5155ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:248:7
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  217 |       errorText.includes('locked') ||
+  218 |       errorText.includes('30')
+> 219 |     ).toBeTruthy();
+      |       ^
+  220 |   });
+  221 |
+  222 |   test('TC_FR02_08 - Correct password is rejected while account is locked', async ({
 ```
 
 ### Page State When Failed
@@ -1480,224 +710,29 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:242
 
 27) tests/fr02.spec.ts:242:7 › FR-02 - Login and Lock Account › TC_FR02_09 - Account can login again after 30-second lock period
-Duration: 5328ms
+Duration: 30010ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:248:7
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
+Test timeout of 30000ms exceeded.
 ---
-
-# Error Context: TC_FR02_08 - Correct password is rejected while account is locked
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:222
-
-28) tests/fr02.spec.ts:222:7 › FR-02 - Login and Lock Account › TC_FR02_08 - Correct password is rejected while account is locked
-Duration: 5803ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
+Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:228:7
+at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:252:16
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_10 - Account remains locked while lock period is active
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:259
-
-29) tests/fr02.spec.ts:259:7 › FR-02 - Login and Lock Account › TC_FR02_10 - Account remains locked while lock period is active
-Duration: 5152ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:265:7
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_10 - Account remains locked while lock period is active
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:259
-
-30) tests/fr02.spec.ts:259:7 › FR-02 - Login and Lock Account › TC_FR02_10 - Account remains locked while lock period is active
-Duration: 5321ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:265:7
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  250 |
+  251 |     // Wait for specified lockout duration (30 seconds)
+> 252 |     await page.waitForTimeout(testCase.waitMs ?? lockoutConfig.lockoutDurationMs);
+      |                ^
+  253 |
+  254 |     await openLoginPage(page);
+  255 |     await successfulLogin(page);
 ```
 
 ### Page State When Failed
@@ -1711,51 +746,30 @@ Call log:
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:242
 
-31) tests/fr02.spec.ts:242:7 › FR-02 - Login and Lock Account › TC_FR02_09 - Account can login again after 30-second lock period
-Duration: 5828ms
+29) tests/fr02.spec.ts:242:7 › FR-02 - Login and Lock Account › TC_FR02_09 - Account can login again after 30-second lock period
+Duration: 30020ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
+Test timeout of 30000ms exceeded.
+---
+Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:248:7
+at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:252:16
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  250 |
+  251 |     // Wait for specified lockout duration (30 seconds)
+> 252 |     await page.waitForTimeout(testCase.waitMs ?? lockoutConfig.lockoutDurationMs);
+      |                ^
+  253 |
+  254 |     await openLoginPage(page);
+  255 |     await successfulLogin(page);
 ```
 
 ### Page State When Failed
@@ -1769,21 +783,21 @@ Call log:
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:282
 
-32) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
-Duration: 5172ms
+31) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
+Duration: 5171ms
 
 ### Error
 ```
 Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Locator:  locator('input[name="email"], input[type="email"]').or(locator('form input').first())
 Expected: "email"
 Received: "text"
 Timeout:  5000ms
 
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+  - waiting for locator('input[name="email"], input[type="email"]').or(locator('form input').first())
     14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
@@ -1793,14 +807,14 @@ Call log:
 ```
 Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Locator:  locator('input[name="email"], input[type="email"]').or(locator('form input').first())
 Expected: "email"
 Received: "text"
 Timeout:  5000ms
 
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+  - waiting for locator('input[name="email"], input[type="email"]').or(locator('form input').first())
     14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
@@ -1816,6 +830,43 @@ Call log:
   292 |   });
   293 |
   294 |   test('TC_FR02_12 - Password field uses type=password', async ({
+```
+
+### Page State When Failed
+**URL:** unknown  
+**Title:** unknown  
+
+---
+
+# Error Context: TC_FR02_09 - Account can login again after 30-second lock period
+
+## Test Location
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:242
+
+32) tests/fr02.spec.ts:242:7 › FR-02 - Login and Lock Account › TC_FR02_09 - Account can login again after 30-second lock period
+Duration: 30023ms
+
+### Error
+```
+Test timeout of 30000ms exceeded.
+---
+Error: page.waitForTimeout: Test timeout of 30000ms exceeded.
+```
+
+### Stack Trace
+```
+at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:252:16
+```
+
+### Code Location
+```typescript
+  250 |
+  251 |     // Wait for specified lockout duration (30 seconds)
+> 252 |     await page.waitForTimeout(testCase.waitMs ?? lockoutConfig.lockoutDurationMs);
+      |                ^
+  253 |
+  254 |     await openLoginPage(page);
+  255 |     await successfulLogin(page);
 ```
 
 ### Page State When Failed
@@ -1830,20 +881,20 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:282
 
 33) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
-Duration: 5330ms
+Duration: 5351ms
 
 ### Error
 ```
 Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Locator:  locator('input[name="email"], input[type="email"]').or(locator('form input').first())
 Expected: "email"
 Received: "text"
 Timeout:  5000ms
 
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+  - waiting for locator('input[name="email"], input[type="email"]').or(locator('form input').first())
     14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
@@ -1853,14 +904,14 @@ Call log:
 ```
 Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Locator:  locator('input[name="email"], input[type="email"]').or(locator('form input').first())
 Expected: "email"
 Received: "text"
 Timeout:  5000ms
 
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+  - waiting for locator('input[name="email"], input[type="email"]').or(locator('form input').first())
     14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
@@ -1876,64 +927,6 @@ Call log:
   292 |   });
   293 |
   294 |   test('TC_FR02_12 - Password field uses type=password', async ({
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_10 - Account remains locked while lock period is active
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:259
-
-34) tests/fr02.spec.ts:259:7 › FR-02 - Login and Lock Account › TC_FR02_10 - Account remains locked while lock period is active
-Duration: 5818ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at failedLogin (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:61:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:265:7
-```
-
-### Code Location
-```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
 ```
 
 ### Page State When Failed
@@ -1948,48 +941,52 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:294
 
 35) tests/fr02.spec.ts:294:7 › FR-02 - Login and Lock Account › TC_FR02_12 - Password field uses type=password
-Duration: 5135ms
+Duration: 5183ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:302:33
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:303:33
 ```
 
 ### Code Location
 ```typescript
-  300 |     ).first();
   301 |
-> 302 |     await expect(passwordInput).toBeVisible();
+  302 |     await expect(passwordInput).toBeVisible();
+> 303 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
       |                                 ^
-  303 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
   304 |   });
   305 |
+  306 |   test('TC_FR02_13 - Login page contains exactly one h1', async ({
 ```
 
 ### Page State When Failed
@@ -2004,108 +1001,52 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:294
 
 36) tests/fr02.spec.ts:294:7 › FR-02 - Login and Lock Account › TC_FR02_12 - Password field uses type=password
-Duration: 5254ms
+Duration: 5391ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:302:33
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:303:33
 ```
 
 ### Code Location
 ```typescript
-  300 |     ).first();
   301 |
-> 302 |     await expect(passwordInput).toBeVisible();
+  302 |     await expect(passwordInput).toBeVisible();
+> 303 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
       |                                 ^
-  303 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
   304 |   });
   305 |
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_13 - Login page contains exactly one h1
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:306
-
-37) tests/fr02.spec.ts:306:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
-Duration: 5164ms
-
-### Error
-```
-Error: expect(locator).toHaveCount(expected) failed
-
-Locator:  locator('h1')
-Expected: 1
-Received: 0
-Timeout:  5000ms
-
-Call log:
-  - Expect "toHaveCount" with timeout 5000ms
-  - waiting for locator('h1')
-    14 × locator resolved to 0 elements
-       - unexpected value "0"
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toHaveCount(expected) failed
-
-Locator:  locator('h1')
-Expected: 1
-Received: 0
-Timeout:  5000ms
-
-Call log:
-  - Expect "toHaveCount" with timeout 5000ms
-  - waiting for locator('h1')
-    14 × locator resolved to 0 elements
-       - unexpected value "0"
-
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:312:22
-```
-
-### Code Location
-```typescript
-  310 |     const h1 = page.locator('h1');
-  311 |
-> 312 |     await expect(h1).toHaveCount(testCase.expectedH1Count);
-      |                      ^
-  313 |     await expect(h1.first()).toBeVisible();
-  314 |   });
-  315 |
+  306 |   test('TC_FR02_13 - Login page contains exactly one h1', async ({
 ```
 
 ### Page State When Failed
@@ -2119,21 +1060,21 @@ Call log:
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:282
 
-38) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
-Duration: 5915ms
+37) tests/fr02.spec.ts:282:7 › FR-02 - Login and Lock Account › TC_FR02_11 - Email field uses type=email
+Duration: 5295ms
 
 ### Error
 ```
 Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Locator:  locator('input[name="email"], input[type="email"]').or(locator('form input').first())
 Expected: "email"
 Received: "text"
 Timeout:  5000ms
 
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+  - waiting for locator('input[name="email"], input[type="email"]').or(locator('form input').first())
     14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
@@ -2143,14 +1084,14 @@ Call log:
 ```
 Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator:  locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+Locator:  locator('input[name="email"], input[type="email"]').or(locator('form input').first())
 Expected: "email"
 Received: "text"
 Timeout:  5000ms
 
 Call log:
   - Expect "toHaveAttribute" with timeout 5000ms
-  - waiting for locator('input[name="email"], input[type="email"], form input:first-of-type').first()
+  - waiting for locator('input[name="email"], input[type="email"]').or(locator('form input').first())
     14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
        - unexpected value "text"
 
@@ -2179,8 +1120,8 @@ Call log:
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:306
 
-39) tests/fr02.spec.ts:306:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
-Duration: 5263ms
+38) tests/fr02.spec.ts:306:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
+Duration: 5145ms
 
 ### Error
 ```
@@ -2234,54 +1175,40 @@ Call log:
 
 ---
 
-# Error Context: TC_FR02_14 - Required login fields are marked as required
+# Error Context: TC_FR02_15 - Authentication error is displayed above submit button
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:316
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:334
 
-40) tests/fr02.spec.ts:316:7 › FR-02 - Login and Lock Account › TC_FR02_14 - Required login fields are marked as required
-Duration: 5178ms
+40) tests/fr02.spec.ts:334:7 › FR-02 - Login and Lock Account › TC_FR02_15 - Authentication error is displayed above submit button
+Duration: 271ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeLessThan(expected)
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
+Expected: < 425
+Received:   517
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeLessThan(expected)
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:328:33
+Expected: < 425
+Received:   517
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:353:25
 ```
 
 ### Code Location
 ```typescript
-  326 |
-  327 |     await expect(emailInput).toBeVisible();
-> 328 |     await expect(passwordInput).toBeVisible();
-      |                                 ^
-  329 |
-  330 |     await expect(emailInput).toHaveAttribute('required', '');
-  331 |     await expect(passwordInput).toHaveAttribute('required', '');
+  351 |     expect(errorBox).not.toBeNull();
+  352 |     expect(buttonBox).not.toBeNull();
+> 353 |     expect(errorBox!.y).toBeLessThan(buttonBox!.y);
+      |                         ^
+  354 |   });
+  355 |
+  356 |   test('TC_FR02_16 - Password characters are hidden', async ({
 ```
 
 ### Page State When Failed
@@ -2290,110 +1217,58 @@ Call log:
 
 ---
 
-# Error Context: TC_FR02_12 - Password field uses type=password
+# Error Context: TC_FR02_13 - Login page contains exactly one h1
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:294
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:306
 
-41) tests/fr02.spec.ts:294:7 › FR-02 - Login and Lock Account › TC_FR02_12 - Password field uses type=password
-Duration: 5814ms
+41) tests/fr02.spec.ts:306:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
+Duration: 5264ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveCount(expected) failed
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('h1')
+Expected: 1
+Received: 0
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveCount" with timeout 5000ms
+  - waiting for locator('h1')
+    14 × locator resolved to 0 elements
+       - unexpected value "0"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveCount(expected) failed
 
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('h1')
+Expected: 1
+Received: 0
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveCount" with timeout 5000ms
+  - waiting for locator('h1')
+    14 × locator resolved to 0 elements
+       - unexpected value "0"
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:302:33
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:312:22
 ```
 
 ### Code Location
 ```typescript
-  300 |     ).first();
-  301 |
-> 302 |     await expect(passwordInput).toBeVisible();
-      |                                 ^
-  303 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
-  304 |   });
-  305 |
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_14 - Required login fields are marked as required
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:316
-
-42) tests/fr02.spec.ts:316:7 › FR-02 - Login and Lock Account › TC_FR02_14 - Required login fields are marked as required
-Duration: 5337ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:328:33
-```
-
-### Code Location
-```typescript
-  326 |
-  327 |     await expect(emailInput).toBeVisible();
-> 328 |     await expect(passwordInput).toBeVisible();
-      |                                 ^
-  329 |
-  330 |     await expect(emailInput).toHaveAttribute('required', '');
-  331 |     await expect(passwordInput).toHaveAttribute('required', '');
+  310 |     const h1 = page.locator('h1');
+  311 |
+> 312 |     await expect(h1).toHaveCount(testCase.expectedH1Count);
+      |                      ^
+  313 |     await expect(h1.first()).toBeVisible();
+  314 |   });
+  315 |
 ```
 
 ### Page State When Failed
@@ -2408,49 +1283,34 @@ Call log:
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:334
 
 43) tests/fr02.spec.ts:334:7 › FR-02 - Login and Lock Account › TC_FR02_15 - Authentication error is displayed above submit button
-Duration: 5174ms
+Duration: 455ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeLessThan(expected)
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
+Expected: < 425
+Received:   517
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeLessThan(expected)
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:337:5
+Expected: < 425
+Received:   517
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:353:25
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  351 |     expect(errorBox).not.toBeNull();
+  352 |     expect(buttonBox).not.toBeNull();
+> 353 |     expect(errorBox!.y).toBeLessThan(buttonBox!.y);
+      |                         ^
+  354 |   });
+  355 |
+  356 |   test('TC_FR02_16 - Password characters are hidden', async ({
 ```
 
 ### Page State When Failed
@@ -2459,55 +1319,178 @@ Call log:
 
 ---
 
-# Error Context: TC_FR02_15 - Authentication error is displayed above submit button
+# Error Context: TC_FR02_12 - Password field uses type=password
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:334
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:294
 
-44) tests/fr02.spec.ts:334:7 › FR-02 - Login and Lock Account › TC_FR02_15 - Authentication error is displayed above submit button
-Duration: 5368ms
+44) tests/fr02.spec.ts:294:7 › FR-02 - Login and Lock Account › TC_FR02_12 - Password field uses type=password
+Duration: 5863ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toHaveAttribute(expected) failed
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input value="" required="" type="text" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:337:5
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:303:33
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
+  301 |
+  302 |     await expect(passwordInput).toBeVisible();
+> 303 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+      |                                 ^
+  304 |   });
+  305 |
+  306 |   test('TC_FR02_13 - Login page contains exactly one h1', async ({
+```
+
+### Page State When Failed
+**URL:** unknown  
+**Title:** unknown  
+
+---
+
+# Error Context: TC_FR02_16 - Password characters are hidden
+
+## Test Location
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:356
+
+45) tests/fr02.spec.ts:356:7 › FR-02 - Login and Lock Account › TC_FR02_16 - Password characters are hidden
+Duration: 5175ms
+
+### Error
+```
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
+
+```
+
+### Stack Trace
+```
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
+
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:365:33
+```
+
+### Code Location
+```typescript
+  363 |
+  364 |     await passwordInput.fill(credentials.validUser.password);
+> 365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+      |                                 ^
+  366 |   });
+  367 |
+  368 |   test('TC_FR02_17 - Tab order follows the login form layout', async ({
+```
+
+### Page State When Failed
+**URL:** unknown  
+**Title:** unknown  
+
+---
+
+# Error Context: TC_FR02_16 - Password characters are hidden
+
+## Test Location
+/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:356
+
+46) tests/fr02.spec.ts:356:7 › FR-02 - Login and Lock Account › TC_FR02_16 - Password characters are hidden
+Duration: 5366ms
+
+### Error
+```
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
+
+```
+
+### Stack Trace
+```
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
+
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:365:33
+```
+
+### Code Location
+```typescript
+  363 |
+  364 |     await passwordInput.fill(credentials.validUser.password);
+> 365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+      |                                 ^
+  366 |   });
+  367 |
+  368 |   test('TC_FR02_17 - Tab order follows the login form layout', async ({
 ```
 
 ### Page State When Failed
@@ -2521,8 +1504,8 @@ Call log:
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:306
 
-45) tests/fr02.spec.ts:306:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
-Duration: 5876ms
+47) tests/fr02.spec.ts:306:7 › FR-02 - Login and Lock Account › TC_FR02_13 - Login page contains exactly one h1
+Duration: 5840ms
 
 ### Error
 ```
@@ -2576,191 +1559,40 @@ Call log:
 
 ---
 
-# Error Context: TC_FR02_14 - Required login fields are marked as required
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:316
-
-46) tests/fr02.spec.ts:316:7 › FR-02 - Login and Lock Account › TC_FR02_14 - Required login fields are marked as required
-Duration: 5794ms
-
-### Error
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-Error: expect(locator).toBeVisible() failed
-
-Locator: locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:328:33
-```
-
-### Code Location
-```typescript
-  326 |
-  327 |     await expect(emailInput).toBeVisible();
-> 328 |     await expect(passwordInput).toBeVisible();
-      |                                 ^
-  329 |
-  330 |     await expect(emailInput).toHaveAttribute('required', '');
-  331 |     await expect(passwordInput).toHaveAttribute('required', '');
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
 # Error Context: TC_FR02_15 - Authentication error is displayed above submit button
 
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:334
 
-47) tests/fr02.spec.ts:334:7 › FR-02 - Login and Lock Account › TC_FR02_15 - Authentication error is displayed above submit button
-Duration: 5831ms
+49) tests/fr02.spec.ts:334:7 › FR-02 - Login and Lock Account › TC_FR02_15 - Authentication error is displayed above submit button
+Duration: 507ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeLessThan(expected)
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
+Expected: < 425
+Received:   517
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeLessThan(expected)
 
-Locator: locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)').first()
-
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:39:31)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:337:5
+Expected: < 425
+Received:   517
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:353:25
 ```
 
 ### Code Location
 ```typescript
-  37 |
-  38 |   await expect(emailInput).toBeVisible();
-> 39 |   await expect(passwordInput).toBeVisible();
-     |                               ^
-  40 |
-  41 |   await emailInput.fill(email);
-  42 |   await passwordInput.fill(password);
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_16 - Password characters are hidden
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:356
-
-48) tests/fr02.spec.ts:356:7 › FR-02 - Login and Lock Account › TC_FR02_16 - Password characters are hidden
-Duration: 30016ms
-
-### Error
-```
-Test timeout of 30000ms exceeded.
----
-Error: locator.fill: Test timeout of 30000ms exceeded.
-Call log:
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:364:25
-```
-
-### Code Location
-```typescript
-  362 |     ).first();
-  363 |
-> 364 |     await passwordInput.fill(credentials.validUser.password);
+  351 |     expect(errorBox).not.toBeNull();
+  352 |     expect(buttonBox).not.toBeNull();
+> 353 |     expect(errorBox!.y).toBeLessThan(buttonBox!.y);
       |                         ^
-  365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
-  366 |   });
-  367 |
-```
-
-### Page State When Failed
-**URL:** unknown  
-**Title:** unknown  
-
----
-
-# Error Context: TC_FR02_16 - Password characters are hidden
-
-## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:356
-
-49) tests/fr02.spec.ts:356:7 › FR-02 - Login and Lock Account › TC_FR02_16 - Password characters are hidden
-Duration: 30016ms
-
-### Error
-```
-Test timeout of 30000ms exceeded.
----
-Error: locator.fill: Test timeout of 30000ms exceeded.
-Call log:
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
-
-```
-
-### Stack Trace
-```
-at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:364:25
-```
-
-### Code Location
-```typescript
-  362 |     ).first();
-  363 |
-> 364 |     await passwordInput.fill(credentials.validUser.password);
-      |                         ^
-  365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
-  366 |   });
-  367 |
+  354 |   });
+  355 |
+  356 |   test('TC_FR02_16 - Password characters are hidden', async ({
 ```
 
 ### Page State When Failed
@@ -2775,32 +1607,52 @@ at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:364:25
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:356
 
 50) tests/fr02.spec.ts:356:7 › FR-02 - Login and Lock Account › TC_FR02_16 - Password characters are hidden
-Duration: 30023ms
+Duration: 5944ms
 
 ### Error
 ```
-Test timeout of 30000ms exceeded.
----
-Error: locator.fill: Test timeout of 30000ms exceeded.
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
 Call log:
-  - waiting for locator('input[name="password"], input[type="password"], form input:nth-of-type(2)').first()
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
 
 ```
 
 ### Stack Trace
 ```
-at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:364:25
+Error: expect(locator).toHaveAttribute(expected) failed
+
+Locator:  locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+Expected: "password"
+Received: "text"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveAttribute" with timeout 5000ms
+  - waiting for locator('input[name="password"], input[type="password"]').or(locator('form input').nth(1))
+    14 × locator resolved to <input required="" type="text" value="Test1234!" class="w-full border p-2 rounded"/>
+       - unexpected value "text"
+
+    at /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:365:33
 ```
 
 ### Code Location
 ```typescript
-  362 |     ).first();
   363 |
-> 364 |     await passwordInput.fill(credentials.validUser.password);
-      |                         ^
-  365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+  364 |     await passwordInput.fill(credentials.validUser.password);
+> 365 |     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
+      |                                 ^
   366 |   });
   367 |
+  368 |   test('TC_FR02_17 - Tab order follows the login form layout', async ({
 ```
 
 ### Page State When Failed

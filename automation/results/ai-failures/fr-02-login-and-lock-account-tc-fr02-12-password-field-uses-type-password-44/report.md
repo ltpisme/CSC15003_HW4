@@ -3,8 +3,8 @@
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:294
 
-36) tests/fr02.spec.ts:294:7 › FR-02 - Login and Lock Account › TC_FR02_12 - Password field uses type=password
-Duration: 5391ms
+44) tests/fr02.spec.ts:294:7 › FR-02 - Login and Lock Account › TC_FR02_12 - Password field uses type=password
+Duration: 5863ms
 
 ### Error
 ```

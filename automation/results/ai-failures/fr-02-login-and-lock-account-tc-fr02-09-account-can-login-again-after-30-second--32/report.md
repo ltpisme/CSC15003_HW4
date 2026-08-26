@@ -3,8 +3,8 @@
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:242
 
-27) tests/fr02.spec.ts:242:7 › FR-02 - Login and Lock Account › TC_FR02_09 - Account can login again after 30-second lock period
-Duration: 30010ms
+32) tests/fr02.spec.ts:242:7 › FR-02 - Login and Lock Account › TC_FR02_09 - Account can login again after 30-second lock period
+Duration: 30023ms
 
 ### Error
 ```

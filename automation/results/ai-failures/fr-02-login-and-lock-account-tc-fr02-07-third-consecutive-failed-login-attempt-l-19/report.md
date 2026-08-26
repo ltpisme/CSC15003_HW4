@@ -3,8 +3,8 @@
 ## Test Location
 /home/ltp/CSC15003_HW4/automation/tests/fr02.spec.ts:199
 
-25) tests/fr02.spec.ts:199:7 › FR-02 - Login and Lock Account › TC_FR02_07 - Third consecutive failed login attempt locks account
-Duration: 1519ms
+19) tests/fr02.spec.ts:199:7 › FR-02 - Login and Lock Account › TC_FR02_07 - Third consecutive failed login attempt locks account
+Duration: 470ms
 
 ### Error
 ```
