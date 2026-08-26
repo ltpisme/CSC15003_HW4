@@ -1080,3 +1080,29 @@ FR16/03_testable_behavior.md
 - **Verdict**: Valid
 - **Reasoning**: Trích dẫn thông tin có nguồn đối chứng, và đã tự kiểm chứng các tài liệu AI sinh ra
 - **Student fix**: Không cần thiết
+
+## 5. Sinh script Playwright
+<a id="log-5"></a>
+- **Timestamp**: 16:54 26/08/2026
+- **Tools**: ChatGPT
+- **Input**: `FR-02_TestPlan.md`, `FR-07_TestPlan.md`, `FR-16_TestPlan.md` 
+- **Prompt**:
+
+==Prompt Start==
+[Nhiệm vụ]
+Dựa vào Test Plan, sinh ra tất cả script test case Playwright ts trong 1 file cho từng feature
+
+[16:54 26/08/2026]
+==Promp End==
+
+- **Output**
+
+==Output Start==
+`fr02.spec.ts`
+`fr07.spec.ts`
+`fr16.spec.ts`
+==Output End==
+
+- **Verdict**: Invalid
+- **Reasoning**: ChatGPT sinh test case chưa đúng với data-driven test
+- **Student fix**: Cần sửa lại script
