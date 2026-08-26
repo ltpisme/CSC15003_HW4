@@ -1,23 +1,23 @@
 # Error Context: TC_FR07_24 - Giao diện FR-07 sử dụng tiếng Việt
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:922
+/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:885
 
-76) tests/fr07.spec.ts:922:7 › FR-07 - Shopping Cart › TC_FR07_24 - Giao diện FR-07 sử dụng tiếng Việt
-Duration: 5840ms
+76) tests/fr07.spec.ts:885:7 › FR-07 - Shopping Cart › TC_FR07_24 - Giao diện FR-07 sử dụng tiếng Việt
+Duration: 6195ms
 
 ### Error
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: getByText('Đơn giá', { exact: true })
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for getByText('Đơn giá', { exact: true })
 
 ```
 
@@ -25,29 +25,27 @@ Call log:
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: getByText('Đơn giá', { exact: true })
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for getByText('Đơn giá', { exact: true })
 
-    at openProductPage (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:47:29)
-    at addProduct (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:111:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:5
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:894:9
 ```
 
 ### Code Location
 ```typescript
-  45 |   }).first();
-  46 |
-> 47 |   await expect(productLink).toBeVisible();
-     |                             ^
-  48 |   await productLink.click();
-  49 |
-  50 |   await page.waitForLoadState('domcontentloaded');
+  892 |       await expect(
+  893 |         page.getByText(text, { exact: true })
+> 894 |       ).toBeVisible();
+      |         ^
+  895 |     }
+  896 |   });
+  897 |
 ```
 
 ### Page State When Failed

@@ -1,10 +1,10 @@
 # Error Context: TC_FR07_22 - Trang Giỏ hàng có đúng một h1
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:861
+/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:828
 
-74) tests/fr07.spec.ts:861:7 › FR-07 - Shopping Cart › TC_FR07_22 - Trang Giỏ hàng có đúng một h1
-Duration: 5811ms
+74) tests/fr07.spec.ts:828:7 › FR-07 - Shopping Cart › TC_FR07_22 - Trang Giỏ hàng có đúng một h1
+Duration: 5773ms
 
 ### Error
 ```
@@ -38,18 +38,18 @@ Call log:
     14 × locator resolved to 0 elements
        - unexpected value "0"
 
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:868:22
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:836:22
 ```
 
 ### Code Location
 ```typescript
-  866 |     const h1 = page.locator('h1');
-  867 |
-> 868 |     await expect(h1).toHaveCount(1);
+  834 |     const h1 = page.locator('h1');
+  835 |
+> 836 |     await expect(h1).toHaveCount(caseData.expectedH1Count);
       |                      ^
-  869 |
-  870 |     await expect(h1.first()).toBeVisible();
-  871 |
+  837 |     await expect(h1.first()).toBeVisible();
+  838 |     await expect(h1.first()).toContainText(new RegExp(caseData.expectedText, 'i'));
+  839 |   });
 ```
 
 ### Page State When Failed

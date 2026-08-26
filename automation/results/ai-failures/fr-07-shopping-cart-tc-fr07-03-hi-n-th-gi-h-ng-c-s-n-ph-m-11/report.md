@@ -1,23 +1,23 @@
 # Error Context: TC_FR07_03 - Hiển thị giỏ hàng có sản phẩm
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:269
+/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:292
 
-11) tests/fr07.spec.ts:269:7 › FR-07 - Shopping Cart › TC_FR07_03 - Hiển thị giỏ hàng có sản phẩm
-Duration: 5269ms
+11) tests/fr07.spec.ts:292:7 › FR-07 - Shopping Cart › TC_FR07_03 - Hiển thị giỏ hàng có sản phẩm
+Duration: 5740ms
 
 ### Error
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: getByText('Tổng cộng', { exact: true })
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for getByText('Tổng cộng', { exact: true })
 
 ```
 
@@ -25,29 +25,27 @@ Call log:
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: getByText('Tổng cộng', { exact: true })
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for getByText('Tổng cộng', { exact: true })
 
-    at openProductPage (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:47:29)
-    at addProduct (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:111:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:272:5
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:310:7
 ```
 
 ### Code Location
 ```typescript
-  45 |   }).first();
-  46 |
-> 47 |   await expect(productLink).toBeVisible();
-     |                             ^
-  48 |   await productLink.click();
-  49 |
-  50 |   await page.waitForLoadState('domcontentloaded');
+  308 |     await expect(
+  309 |       page.getByText(labels.totalExpected, { exact: true })
+> 310 |     ).toBeVisible();
+      |       ^
+  311 |   });
+  312 |
+  313 |   test('TC_FR07_04 - Kiểm tra cấu trúc các cột của giỏ hàng', async ({
 ```
 
 ### Page State When Failed

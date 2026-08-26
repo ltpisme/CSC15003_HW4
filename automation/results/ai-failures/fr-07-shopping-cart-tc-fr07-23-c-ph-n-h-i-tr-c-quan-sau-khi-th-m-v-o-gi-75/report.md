@@ -1,52 +1,35 @@
 # Error Context: TC_FR07_23 - Có phản hồi trực quan sau khi thêm vào giỏ
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:877
+/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:841
 
-75) tests/fr07.spec.ts:877:7 › FR-07 - Shopping Cart › TC_FR07_23 - Có phản hồi trực quan sau khi thêm vào giỏ
-Duration: 5791ms
+75) tests/fr07.spec.ts:841:7 › FR-07 - Shopping Cart › TC_FR07_23 - Có phản hồi trực quan sau khi thêm vào giỏ
+Duration: 1183ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-
+Received: false
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeTruthy()
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-
-    at openProductPage (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:47:29)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:880:5
+Received: false
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55
 ```
 
 ### Code Location
 ```typescript
-  45 |   }).first();
-  46 |
-> 47 |   await expect(productLink).toBeVisible();
-     |                             ^
-  48 |   await productLink.click();
-  49 |
-  50 |   await page.waitForLoadState('domcontentloaded');
+  876 |     const hasButtonFeedback = buttonText.includes('Đã thêm');
+  877 |
+> 878 |     expect(hasToast || hasBadge || hasButtonFeedback).toBeTruthy();
+      |                                                       ^
+  879 |   });
+  880 |
+  881 |   /* ============================================================
 ```
 
 ### Page State When Failed

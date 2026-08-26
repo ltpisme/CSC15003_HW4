@@ -1,23 +1,23 @@
 # Error Context: TC_FR07_05 - Kiểm tra nhãn tổng tiền là Tổng cộng
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:318
+/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:326
 
-15) tests/fr07.spec.ts:318:7 › FR-07 - Shopping Cart › TC_FR07_05 - Kiểm tra nhãn tổng tiền là Tổng cộng
-Duration: 5134ms
+15) tests/fr07.spec.ts:326:7 › FR-07 - Shopping Cart › TC_FR07_05 - Kiểm tra nhãn tổng tiền là Tổng cộng
+Duration: 5394ms
 
 ### Error
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: getByText('Tổng cộng', { exact: true })
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for getByText('Tổng cộng', { exact: true })
 
 ```
 
@@ -25,29 +25,27 @@ Call log:
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: getByText('Tổng cộng', { exact: true })
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for getByText('Tổng cộng', { exact: true })
 
-    at openProductPage (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:47:29)
-    at addProduct (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:111:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:321:5
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:334:7
 ```
 
 ### Code Location
 ```typescript
-  45 |   }).first();
-  46 |
-> 47 |   await expect(productLink).toBeVisible();
-     |                             ^
-  48 |   await productLink.click();
-  49 |
-  50 |   await page.waitForLoadState('domcontentloaded');
+  332 |     await expect(
+  333 |       page.getByText(labels.totalExpected, { exact: true })
+> 334 |     ).toBeVisible();
+      |       ^
+  335 |
+  336 |     await expect(
+  337 |       page.getByText(labels.totalInvalid, { exact: true })
 ```
 
 ### Page State When Failed

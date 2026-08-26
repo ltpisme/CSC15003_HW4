@@ -1,23 +1,23 @@
 # Error Context: TC_FR07_17 - Xóa sản phẩm và xác nhận
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:698
+/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:666
 
-58) tests/fr07.spec.ts:698:7 › FR-07 - Shopping Cart › TC_FR07_17 - Xóa sản phẩm và xác nhận
-Duration: 5739ms
+58) tests/fr07.spec.ts:666:7 › FR-07 - Shopping Cart › TC_FR07_17 - Xóa sản phẩm và xác nhận
+Duration: 6443ms
 
 ### Error
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: locator('[role="dialog"], .modal, .confirm-dialog, [data-testid="confirm-dialog"]').first()
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for locator('[role="dialog"], .modal, .confirm-dialog, [data-testid="confirm-dialog"]').first()
 
 ```
 
@@ -25,29 +25,27 @@ Call log:
 ```
 Error: expect(locator).toBeVisible() failed
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+Locator: locator('[role="dialog"], .modal, .confirm-dialog, [data-testid="confirm-dialog"]').first()
 Expected: visible
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
   - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
+  - waiting for locator('[role="dialog"], .modal, .confirm-dialog, [data-testid="confirm-dialog"]').first()
 
-    at openProductPage (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:47:29)
-    at addProduct (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:111:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:701:5
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:688:26
 ```
 
 ### Code Location
 ```typescript
-  45 |   }).first();
-  46 |
-> 47 |   await expect(productLink).toBeVisible();
-     |                             ^
-  48 |   await productLink.click();
-  49 |
-  50 |   await page.waitForLoadState('domcontentloaded');
+  686 |     const dialog = deleteDialog(page);
+  687 |
+> 688 |     await expect(dialog).toBeVisible();
+      |                          ^
+  689 |
+  690 |     await expect(
+  691 |       dialog.getByText(/xóa|xác nhận/i)
 ```
 
 ### Page State When Failed

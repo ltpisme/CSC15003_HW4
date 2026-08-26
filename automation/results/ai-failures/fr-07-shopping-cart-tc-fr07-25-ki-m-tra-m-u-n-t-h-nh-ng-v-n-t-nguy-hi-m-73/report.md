@@ -1,53 +1,37 @@
 # Error Context: TC_FR07_25 - Kiểm tra màu nút hành động và nút nguy hiểm
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:948
+/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:898
 
-73) tests/fr07.spec.ts:948:7 › FR-07 - Shopping Cart › TC_FR07_25 - Kiểm tra màu nút hành động và nút nguy hiểm
-Duration: 5256ms
+73) tests/fr07.spec.ts:898:7 › FR-07 - Shopping Cart › TC_FR07_25 - Kiểm tra màu nút hành động và nút nguy hiểm
+Duration: 825ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeGreaterThan(expected)
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-
+Expected: > 0
+Received:   0
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(received).toBeGreaterThan(expected)
 
-Locator: getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-Expected: visible
-Timeout: 5000ms
-Error: element(s) not found
-
-Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for getByRole('link', { name: /iPhone 15 Pro Max/i }).first()
-
-    at openProductPage (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:47:29)
-    at addProduct (/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:111:3)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:951:5
+Expected: > 0
+Received:   0
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:19
 ```
 
 ### Code Location
 ```typescript
-  45 |   }).first();
-  46 |
-> 47 |   await expect(productLink).toBeVisible();
-     |                             ^
-  48 |   await productLink.click();
-  49 |
-  50 |   await page.waitForLoadState('domcontentloaded');
+  923 |     if (rgbValues && rgbValues.length >= 3) {
+  924 |       const [red, green, blue] = rgbValues;
+> 925 |       expect(red).toBeGreaterThan(green);
+      |                   ^
+  926 |       expect(red).toBeGreaterThan(blue);
+  927 |     }
+  928 |   });
 ```
 
 ### Page State When Failed
