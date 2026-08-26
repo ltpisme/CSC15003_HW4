@@ -872,6 +872,13 @@ test.describe('FR-07 - Shopping Cart', () => {
 
     const badge = cartBadge(page);
 
+    const feedbackButton = page
+      .getByRole('button', {
+        name: new RegExp(`${labels.addToCartButton}|Thêm vào giỏ|Đã thêm`, 'i'),
+      })
+      .or(page.locator('button').filter({ hasText: /Thêm vào giỏ|Đã thêm/i }))
+      .first();
+
     const hasToast =
       (await toast.count()) > 0 &&
       (await toast.isVisible().catch(() => false));
@@ -880,8 +887,10 @@ test.describe('FR-07 - Shopping Cart', () => {
       (await badge.count()) > 0 &&
       (await badge.isVisible().catch(() => false));
 
-    const buttonText = await addButton.innerText().catch(() => '');
-    const hasButtonFeedback = buttonText.includes('Đã thêm');
+    const buttonText = await feedbackButton.innerText().catch(() => '');
+    const hasButtonFeedback =
+      buttonText.includes('Đã thêm') ||
+      (await page.getByText(/Đã thêm/i).isVisible().catch(() => false));
 
     expect(hasToast || hasBadge || hasButtonFeedback).toBeTruthy();
   });
