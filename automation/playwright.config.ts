@@ -9,7 +9,7 @@ export default defineConfig({
     [
       'html',
       {
-        outputFolder: '../reports/playwright',
+        outputFolder: 'reports/playwright',
         open: 'never',
       },
     ],
@@ -17,14 +17,14 @@ export default defineConfig({
     [
       'json',
       {
-        outputFile: '../results/result.json',
+        outputFile: 'results/result.json',
       },
     ],
 
     [
       '@zenai/playwright-coding-agent-reporter',
       {
-        outputDir: '../results/ai-failures',
+        outputDir: 'results/ai-failures',
         includeScreenshots: true,
         includeConsoleErrors: true,
         includeNetworkErrors: true,
@@ -38,8 +38,9 @@ export default defineConfig({
   use: {
     baseURL: 'http://localhost:5173',
 
-    screenshot: 'only-on-failure',
-    trace: 'retain-on-failure',
+    // Screenshot và trace được ZenAI reporter xử lý.
+    screenshot: 'off',
+    trace: 'off',
   },
 
   projects: [
