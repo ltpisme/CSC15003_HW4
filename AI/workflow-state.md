@@ -1,3 +1,3 @@
 Feature = FR02
-Iteration = COMMIT1
-Next action = STUDENT_REVIEW_COMMIT1
+Iteration = COMMIT2
+Next action = STUDENT_REVIEW_COMMIT2

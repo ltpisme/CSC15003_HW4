@@ -28,12 +28,12 @@ async function fillLoginForm(
   password: string
 ) {
   const emailInput = page.locator(
-    'input[type="email"], input[name="email"], input[name="username"], form input:not([type="password"]):not([type="submit"])'
-  ).first();
+    'input[type="email"], input[name="email"], input[name="username"]'
+  ).or(page.locator('form input').first());
 
   const passwordInput = page.locator(
-    'input[type="password"], input[name="password"], form input[type="text"]:nth-of-type(2), form input:nth-of-type(2)'
-  ).first();
+    'input[type="password"], input[name="password"]'
+  ).or(page.locator('form input').nth(1));
 
   await expect(emailInput).toBeVisible();
   await expect(passwordInput).toBeVisible();
@@ -48,7 +48,7 @@ async function fillLoginForm(
 async function submitLogin(page: Page) {
   const submitButton = page.getByRole('button', {
     name: /Sign In|Đăng nhập|Login/i,
-  });
+  }).or(page.locator('form button[type="submit"], form button').first());
 
   await expect(submitButton).toBeVisible();
   await submitButton.click();
@@ -104,15 +104,15 @@ test.describe('FR-02 - Login and Lock Account', () => {
   }) => {
     const testCase = functionalCases.find((c: any) => c.id === 'TC_FR02_02')!;
     const emailInput = page.locator(
-      'input[type="email"], input[name="email"], form input:first-of-type'
-    ).first();
+      'input[type="email"], input[name="email"]'
+    ).or(page.locator('form input').first());
 
     await expect(emailInput).toBeVisible();
     await emailInput.fill(testCase.email);
 
     const passwordInput = page.locator(
-      'input[type="password"], input[name="password"], form input:nth-of-type(2)'
-    ).first();
+      'input[type="password"], input[name="password"]'
+    ).or(page.locator('form input').nth(1));
 
     await passwordInput.fill(testCase.password);
     await submitLogin(page);
@@ -284,8 +284,8 @@ test.describe('FR-02 - Login and Lock Account', () => {
   }) => {
     const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_11')!;
     const emailInput = page.locator(
-      'input[name="email"], input[type="email"], form input:first-of-type'
-    ).first();
+      'input[name="email"], input[type="email"]'
+    ).or(page.locator('form input').first());
 
     await expect(emailInput).toBeVisible();
     await expect(emailInput).toHaveAttribute('type', testCase.expectedType);
@@ -296,8 +296,8 @@ test.describe('FR-02 - Login and Lock Account', () => {
   }) => {
     const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_12')!;
     const passwordInput = page.locator(
-      'input[name="password"], input[type="password"], form input:nth-of-type(2)'
-    ).first();
+      'input[name="password"], input[type="password"]'
+    ).or(page.locator('form input').nth(1));
 
     await expect(passwordInput).toBeVisible();
     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
@@ -317,12 +317,12 @@ test.describe('FR-02 - Login and Lock Account', () => {
     page,
   }) => {
     const emailInput = page.locator(
-      'input[name="email"], input[type="email"], input[name="username"], form input:first-of-type'
-    ).first();
+      'input[name="email"], input[type="email"], input[name="username"]'
+    ).or(page.locator('form input').first());
 
     const passwordInput = page.locator(
-      'input[name="password"], input[type="password"], form input:nth-of-type(2)'
-    ).first();
+      'input[name="password"], input[type="password"]'
+    ).or(page.locator('form input').nth(1));
 
     await expect(emailInput).toBeVisible();
     await expect(passwordInput).toBeVisible();
@@ -340,7 +340,7 @@ test.describe('FR-02 - Login and Lock Account', () => {
     const error = authError(page);
     const submitButton = page.getByRole('button', {
       name: /Sign In|Đăng nhập|Login/i,
-    });
+    }).or(page.locator('form button[type="submit"], form button').first());
 
     await expect(error).toBeVisible();
     await expect(submitButton).toBeVisible();
@@ -358,8 +358,8 @@ test.describe('FR-02 - Login and Lock Account', () => {
   }) => {
     const testCase = guiCases.find((c: any) => c.id === 'TC_FR02_16')!;
     const passwordInput = page.locator(
-      'input[name="password"], input[type="password"], form input:nth-of-type(2)'
-    ).first();
+      'input[name="password"], input[type="password"]'
+    ).or(page.locator('form input').nth(1));
 
     await passwordInput.fill(credentials.validUser.password);
     await expect(passwordInput).toHaveAttribute('type', testCase.expectedType);
