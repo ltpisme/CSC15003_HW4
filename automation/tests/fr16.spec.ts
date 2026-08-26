@@ -2,7 +2,7 @@ import { test, expect, Page } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
 
-const BASE_URL = 'http://localhost:5173';
+const BASE_URL = 'http://localhost:5174';
 
 const LOGIN_URL = `${BASE_URL}/login`;
 const IMPORT_URL = `${BASE_URL}/admin/import-products`;
