@@ -1,15 +1,15 @@
 import { test, expect, Page } from '@playwright/test';
 import fs from 'fs';
 import path from 'path';
+import testData from '../data/fr16-data.json';
 
-const BASE_URL = 'http://localhost:5174';
+const BASE_URL = testData.urls.baseUrl;
+const LOGIN_URL = testData.urls.login;
+const IMPORT_URL = testData.urls.import;
+const PRODUCTS_URL = testData.urls.products;
 
-const LOGIN_URL = `${BASE_URL}/login`;
-const IMPORT_URL = `${BASE_URL}/admin/import-products`;
-const PRODUCTS_URL = `${BASE_URL}/admin/products`;
-
-const ADMIN_EMAIL = 'admin@eshop.com';
-const ADMIN_PASSWORD = 'Admin123!';
+const ADMIN_EMAIL = testData.credentials.admin.email;
+const ADMIN_PASSWORD = testData.credentials.admin.password;
 
 /*
  * Non-admin credentials are not specified by the SRS.
@@ -32,8 +32,7 @@ const TEST_DATA_DIR = path.join(
 /**
  * Standard CSV header required by FR-16.
  */
-const VALID_HEADER =
-  'name,price,description,imageUrl,category_id';
+const VALID_HEADER = testData.headers.valid;
 
 /**
  * Create a CSV file used by browser upload tests.
@@ -397,7 +396,7 @@ async function expectErrorCount(
 }
 
 /* ============================================================
- * FR-16 Functional Tests
+ * FR-16 Functional Tests (Data-driven)
  * ========================================================== */
 
 test.describe(
@@ -411,6 +410,7 @@ test.describe(
     test(
       'TC_FR16_01 - Admin can access Import Products',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_01;
         await loginAsAdmin(page);
 
         await openImportPage(page);
@@ -426,10 +426,11 @@ test.describe(
     test(
       'TC_FR16_02 - Non-admin cannot import products',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_02;
         await loginAsNonAdmin(page);
 
         await page.goto(
-          IMPORT_URL
+          tcData.targetUrl
         );
 
         await page.waitForLoadState(
@@ -465,19 +466,20 @@ test.describe(
     test(
       'TC_FR16_03 - Import valid .csv file',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_03;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productName =
-          uniqueProduct('FR16-CSV');
+          uniqueProduct(tcData.prefix);
+
+        const row = tcData.rows[0].replace('{prefix}', productName);
 
         await importCsv(
           page,
-          'products.csv',
-          createCsv([
-            `${productName},1000,Desc,http://url.com,1`,
-          ])
+          tcData.filename,
+          createCsv([row], testData.headers[tcData.headerType as keyof typeof testData.headers])
         );
 
         await expectImportSuccess(page);
@@ -487,6 +489,7 @@ test.describe(
     test(
       'TC_FR16_04 - Reject non-.csv file',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_04;
         await loginAsAdmin(page);
 
         await openImportPage(page);
@@ -496,10 +499,11 @@ test.describe(
          * extension is intentionally .xlsx.
          */
         const filePath = createCsvFile(
-          'products.xlsx',
-          createCsv([
-            'FR16-XLSX,1000,Desc,http://url.com,1',
-          ])
+          tcData.filename,
+          createCsv(
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await uploadFile(
@@ -520,19 +524,23 @@ test.describe(
     test(
       'TC_FR16_05 - Accept valid CSV header',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_05;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productName =
-          uniqueProduct('FR16-HEADER');
+          uniqueProduct(tcData.prefix);
+
+        const row = tcData.rows[0].replace('{prefix}', productName);
 
         await importCsv(
           page,
-          'valid-header.csv',
-          createCsv([
-            `${productName},1000,Desc,http://url.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            [row],
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportSuccess(page);
@@ -542,18 +550,17 @@ test.describe(
     test(
       'TC_FR16_06 - Reject CSV with missing header fields',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_06;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         await importCsv(
           page,
-          'missing-header.csv',
+          tcData.filename,
           createCsv(
-            [
-              'FR16-MISSING-HEADER,1000',
-            ],
-            'name,price'
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
           )
         );
 
@@ -561,7 +568,7 @@ test.describe(
 
         await expectErrorReason(
           page,
-          /header|column|field|structure|format|cấu trúc/i
+          new RegExp(tcData.expectedReasonPattern, 'i')
         );
       }
     );
@@ -569,18 +576,17 @@ test.describe(
     test(
       'TC_FR16_07 - Reject CSV with incorrect header name',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_07;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         await importCsv(
           page,
-          'invalid-header.csv',
+          tcData.filename,
           createCsv(
-            [
-              'FR16-INVALID-HEADER,1000,Desc,http://url.com,1',
-            ],
-            'product_name,price,description,imageUrl,category_id'
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
           )
         );
 
@@ -588,7 +594,7 @@ test.describe(
 
         await expectErrorReason(
           page,
-          /header|column|field|structure|format/i
+          new RegExp(tcData.expectedReasonPattern, 'i')
         );
       }
     );
@@ -600,19 +606,23 @@ test.describe(
     test(
       'TC_FR16_08 - Parse quoted comma in CSV field correctly',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_08;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productName =
-          `iPhone, 13 ${Date.now()}`;
+          `${tcData.baseProductName} ${Date.now()}`;
+
+        const row = tcData.rowTemplate.replace('{productName}', productName);
 
         await importCsv(
           page,
-          'quoted-comma.csv',
-          createCsv([
-            `"${productName}",1000,"Desc, iPhone 13",http://url.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            [row],
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportSuccess(page);
@@ -633,16 +643,18 @@ test.describe(
     test(
       'TC_FR16_09 - Reject unquoted comma in CSV field',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_09;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         await importCsv(
           page,
-          'unquoted-comma.csv',
-          createCsv([
-            'iPhone, 13,1000,"Desc",http://url.com,1',
-          ])
+          tcData.filename,
+          createCsv(
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
@@ -656,19 +668,23 @@ test.describe(
     test(
       'TC_FR16_10 - Accept product name with minimum length 1',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_10;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productName =
-          uniqueProduct('A');
+          uniqueProduct(tcData.prefix);
+
+        const row = tcData.rowTemplate.replace('{productName}', productName);
 
         await importCsv(
           page,
-          'name-min-length.csv',
-          createCsv([
-            `${productName},1000,Desc,http://url.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            [row],
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportSuccess(page);
@@ -678,23 +694,25 @@ test.describe(
     test(
       'TC_FR16_11 - Reject empty product name',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_11;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         await importCsv(
           page,
-          'empty-name.csv',
-          createCsv([
-            ',1000,Desc,http://url.com,1',
-          ])
+          tcData.filename,
+          createCsv(
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
 
         await expectErrorReason(
           page,
-          /name.*required|name.*empty|name.*blank|tên.*rỗng|tên.*bắt buộc/i
+          new RegExp(tcData.expectedReasonPattern, 'i')
         );
       }
     );
@@ -706,23 +724,25 @@ test.describe(
     test(
       'TC_FR16_12 - Reject price equal to 0',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_12;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         await importCsv(
           page,
-          'price-zero.csv',
-          createCsv([
-            'FR16-PRICE-ZERO,0,Desc,http://url.com,1',
-          ])
+          tcData.filename,
+          createCsv(
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
 
         await expectErrorReason(
           page,
-          /price.*positive|price.*greater|price.*zero|giá.*lớn hơn|giá.*0/i
+          new RegExp(tcData.expectedReasonPattern, 'i')
         );
       }
     );
@@ -730,19 +750,23 @@ test.describe(
     test(
       'TC_FR16_13 - Accept price equal to 0.01',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_13;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productName =
-          uniqueProduct('FR16-PRICE-001');
+          uniqueProduct(tcData.prefix);
+
+        const row = tcData.rowTemplate.replace('{productName}', productName);
 
         await importCsv(
           page,
-          'price-0-01.csv',
-          createCsv([
-            `${productName},0.01,Desc,http://url.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            [row],
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportSuccess(page);
@@ -759,23 +783,25 @@ test.describe(
     test(
       'TC_FR16_14 - Reject negative price -0.01',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_14;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         await importCsv(
           page,
-          'price-negative.csv',
-          createCsv([
-            'FR16-PRICE-NEGATIVE,-0.01,Desc,http://url.com,1',
-          ])
+          tcData.filename,
+          createCsv(
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
 
         await expectErrorReason(
           page,
-          /price.*positive|price.*greater|negative|giá.*lớn hơn|giá.*không hợp lệ/i
+          new RegExp(tcData.expectedReasonPattern, 'i')
         );
       }
     );
@@ -783,23 +809,25 @@ test.describe(
     test(
       'TC_FR16_15 - Reject non-numeric price',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_15;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         await importCsv(
           page,
-          'price-nonnumeric.csv',
-          createCsv([
-            'FR16-PRICE-NONNUMERIC,abc,Desc,http://url.com,1',
-          ])
+          tcData.filename,
+          createCsv(
+            tcData.rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
 
         await expectErrorReason(
           page,
-          /price|number|numeric|giá|số/i
+          new RegExp(tcData.expectedReasonPattern, 'i')
         );
       }
     );
@@ -811,27 +839,33 @@ test.describe(
     test(
       'TC_FR16_16 - Rollback entire import when middle row is invalid',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_16;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productA =
-          uniqueProduct('FR16-ROLLBACK-A');
+          uniqueProduct(tcData.prefixes.productA);
 
         const productB =
-          uniqueProduct('FR16-ROLLBACK-B');
+          uniqueProduct(tcData.prefixes.productB);
 
         const productC =
-          uniqueProduct('FR16-ROLLBACK-C');
+          uniqueProduct(tcData.prefixes.productC);
+
+        const rows = [
+          tcData.rowTemplates[0].replace('{productA}', productA),
+          tcData.rowTemplates[1].replace('{productB}', productB),
+          tcData.rowTemplates[2].replace('{productC}', productC),
+        ];
 
         await importCsv(
           page,
-          'rollback-middle.csv',
-          createCsv([
-            `${productA},1000,Desc A,http://url-a.com,1`,
-            `${productB},0,Desc B,http://url-b.com,1`,
-            `${productC},2000,Desc C,http://url-c.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
@@ -862,27 +896,33 @@ test.describe(
     test(
       'TC_FR16_17 - Rollback previous rows when last row is invalid',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_17;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productA =
-          uniqueProduct('FR16-ROLLBACK-LAST-A');
+          uniqueProduct(tcData.prefixes.productA);
 
         const productB =
-          uniqueProduct('FR16-ROLLBACK-LAST-B');
+          uniqueProduct(tcData.prefixes.productB);
 
         const productC =
-          uniqueProduct('FR16-ROLLBACK-LAST-C');
+          uniqueProduct(tcData.prefixes.productC);
+
+        const rows = [
+          tcData.rowTemplates[0].replace('{productA}', productA),
+          tcData.rowTemplates[1].replace('{productB}', productB),
+          tcData.rowTemplates[2].replace('{productC}', productC),
+        ];
 
         await importCsv(
           page,
-          'rollback-last.csv',
-          createCsv([
-            `${productA},1000,Desc A,http://url-a.com,1`,
-            `${productB},2000,Desc B,http://url-b.com,1`,
-            `${productC},0,Desc C,http://url-c.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
@@ -909,24 +949,30 @@ test.describe(
     test(
       'TC_FR16_18 - Multiple errors cause complete rollback',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_18;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productA =
-          uniqueProduct('FR16-MULTI-A');
+          uniqueProduct(tcData.prefixes.productA);
 
         const productC =
-          uniqueProduct('FR16-MULTI-C');
+          uniqueProduct(tcData.prefixes.productC);
+
+        const rows = [
+          tcData.rowTemplates[0].replace('{productA}', productA),
+          tcData.rowTemplates[1],
+          tcData.rowTemplates[2].replace('{productC}', productC),
+        ];
 
         await importCsv(
           page,
-          'multiple-errors.csv',
-          createCsv([
-            `${productA},1000,Desc A,http://url-a.com,1`,
-            `,2000,Desc B,http://url-b.com,1`,
-            `${productC},0,Desc C,http://url-c.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
@@ -934,15 +980,12 @@ test.describe(
         /*
          * Both validation errors should be reported.
          */
-        await expectErrorReason(
-          page,
-          /name.*required|name.*empty|name.*blank|tên.*rỗng|tên.*bắt buộc/i
-        );
-
-        await expectErrorReason(
-          page,
-          /price.*positive|price.*greater|price.*zero|giá.*lớn hơn|giá.*0/i
-        );
+        for (const pattern of tcData.expectedReasonPatterns) {
+          await expectErrorReason(
+            page,
+            new RegExp(pattern, 'i')
+          );
+        }
 
         /*
          * No valid row may remain in the database.
@@ -968,39 +1011,45 @@ test.describe(
     test(
       'TC_FR16_19 - Display successful import count',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_19;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productA =
-          uniqueProduct('FR16-REPORT-A');
+          uniqueProduct(tcData.prefixes.productA);
 
         const productB =
-          uniqueProduct('FR16-REPORT-B');
+          uniqueProduct(tcData.prefixes.productB);
 
         const productC =
-          uniqueProduct('FR16-REPORT-C');
+          uniqueProduct(tcData.prefixes.productC);
+
+        const rows = [
+          tcData.rowTemplates[0].replace('{productA}', productA),
+          tcData.rowTemplates[1].replace('{productB}', productB),
+          tcData.rowTemplates[2].replace('{productC}', productC),
+        ];
 
         await importCsv(
           page,
-          'successful-report.csv',
-          createCsv([
-            `${productA},1000,Desc A,http://url-a.com,1`,
-            `${productB},2000,Desc B,http://url-b.com,1`,
-            `${productC},3000,Desc C,http://url-c.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportSuccess(page);
 
         await expectSuccessCount(
           page,
-          3
+          tcData.expectedSuccessCount
         );
 
         await expectErrorCount(
           page,
-          0
+          tcData.expectedErrorCount
         );
       }
     );
@@ -1008,24 +1057,30 @@ test.describe(
     test(
       'TC_FR16_20 - Display error count and error reasons',
       async ({ page }) => {
+        const tcData = testData.testCases.TC_FR16_20;
         await loginAsAdmin(page);
 
         await openImportPage(page);
 
         const productA =
-          uniqueProduct('FR16-REPORT-ERROR-A');
+          uniqueProduct(tcData.prefixes.productA);
 
         const productC =
-          uniqueProduct('FR16-REPORT-ERROR-C');
+          uniqueProduct(tcData.prefixes.productC);
+
+        const rows = [
+          tcData.rowTemplates[0].replace('{productA}', productA),
+          tcData.rowTemplates[1],
+          tcData.rowTemplates[2].replace('{productC}', productC),
+        ];
 
         await importCsv(
           page,
-          'error-report.csv',
-          createCsv([
-            `${productA},1000,Desc A,http://url-a.com,1`,
-            `,2000,Desc B,http://url-b.com,1`,
-            `${productC},0,Desc C,http://url-c.com,1`,
-          ])
+          tcData.filename,
+          createCsv(
+            rows,
+            testData.headers[tcData.headerType as keyof typeof testData.headers]
+          )
         );
 
         await expectImportError(page);
@@ -1036,7 +1091,7 @@ test.describe(
          */
         await expectSuccessCount(
           page,
-          0
+          tcData.expectedSuccessCount
         );
 
         /*
@@ -1044,21 +1099,18 @@ test.describe(
          */
         await expectErrorCount(
           page,
-          2
+          tcData.expectedErrorCount
         );
 
         /*
          * Verify both error reasons are reported.
          */
-        await expectErrorReason(
-          page,
-          /name.*required|name.*empty|name.*blank|tên.*rỗng|tên.*bắt buộc/i
-        );
-
-        await expectErrorReason(
-          page,
-          /price.*positive|price.*greater|price.*zero|giá.*lớn hơn|giá.*0/i
-        );
+        for (const pattern of tcData.expectedReasonPatterns) {
+          await expectErrorReason(
+            page,
+            new RegExp(pattern, 'i')
+          );
+        }
 
         /*
          * Verify atomic rollback through the Product List UI.
