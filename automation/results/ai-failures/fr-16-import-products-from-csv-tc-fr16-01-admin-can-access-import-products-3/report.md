@@ -1,53 +1,51 @@
 # Error Context: TC_FR16_01 - Admin can access Import Products
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:410
+/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:451
 
-3) tests/fr16.spec.ts:410:7 › FR-16 - Import Products from CSV › TC_FR16_01 - Admin can access Import Products
-Duration: 5336ms
+3) tests/fr16.spec.ts:451:7 › FR-16 - Import Products from CSV › TC_FR16_01 - Admin can access Import Products
+Duration: 5455ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toBeAttached() failed
 
-Locator: locator('input[type="email"], input[name="email"], input[name="username"]').first()
-Expected: visible
+Locator: locator('input[type="file"]')
+Expected: attached
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="email"], input[name="email"], input[name="username"]').first()
+  - Expect "toBeAttached" with timeout 5000ms
+  - waiting for locator('input[type="file"]')
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toBeAttached() failed
 
-Locator: locator('input[type="email"], input[name="email"], input[name="username"]').first()
-Expected: visible
+Locator: locator('input[type="file"]')
+Expected: attached
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="email"], input[name="email"], input[name="username"]').first()
+  - Expect "toBeAttached" with timeout 5000ms
+  - waiting for locator('input[type="file"]')
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:135:28)
-    at loginAsAdmin (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:160:9)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:414:9
+    at /home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:463:29
 ```
 
 ### Code Location
 ```typescript
-  133 |   ).first();
-  134 |
-> 135 |   await expect(emailInput).toBeVisible();
-      |                            ^
-  136 |   await expect(passwordInput).toBeVisible();
-  137 |
-  138 |   await emailInput.fill(email);
+  461 |         );
+  462 |
+> 463 |         await expect(input).toBeAttached();
+      |                             ^
+  464 |       }
+  465 |     );
+  466 |
 ```
 
 ### Page State When Failed

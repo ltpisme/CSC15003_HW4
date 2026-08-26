@@ -1,53 +1,54 @@
 # Error Context: TC_FR16_07 - Reject CSV with incorrect header name
 
 ## Test Location
-/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:576
+/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:617
 
-22) tests/fr16.spec.ts:576:7 › FR-16 - Import Products from CSV › TC_FR16_07 - Reject CSV with incorrect header name
-Duration: 5238ms
+22) tests/fr16.spec.ts:617:7 › FR-16 - Import Products from CSV › TC_FR16_07 - Reject CSV with incorrect header name
+Duration: 5351ms
 
 ### Error
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toBeAttached() failed
 
-Locator: locator('input[type="email"], input[name="email"], input[name="username"]').first()
-Expected: visible
+Locator: locator('input[type="file"]').first()
+Expected: attached
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="email"], input[name="email"], input[name="username"]').first()
+  - Expect "toBeAttached" with timeout 5000ms
+  - waiting for locator('input[type="file"]').first()
 
 ```
 
 ### Stack Trace
 ```
-Error: expect(locator).toBeVisible() failed
+Error: expect(locator).toBeAttached() failed
 
-Locator: locator('input[type="email"], input[name="email"], input[name="username"]').first()
-Expected: visible
+Locator: locator('input[type="file"]').first()
+Expected: attached
 Timeout: 5000ms
 Error: element(s) not found
 
 Call log:
-  - Expect "toBeVisible" with timeout 5000ms
-  - waiting for locator('input[type="email"], input[name="email"], input[name="username"]').first()
+  - Expect "toBeAttached" with timeout 5000ms
+  - waiting for locator('input[type="file"]').first()
 
-    at fillLoginForm (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:135:28)
-    at loginAsAdmin (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:160:9)
-    at /home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:580:9
+    at fileInput (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:240:23)
+    at uploadFile (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:252:23)
+    at importCsv (/home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:285:9)
+    at /home/ltp/CSC15003_HW4/automation/tests/fr16.spec.ts:625:15
 ```
 
 ### Code Location
 ```typescript
-  133 |   ).first();
-  134 |
-> 135 |   await expect(emailInput).toBeVisible();
-      |                            ^
-  136 |   await expect(passwordInput).toBeVisible();
-  137 |
-  138 |   await emailInput.fill(email);
+  238 |   ).first();
+  239 |
+> 240 |   await expect(input).toBeAttached();
+      |                       ^
+  241 |
+  242 |   return input;
+  243 | }
 ```
 
 ### Page State When Failed
