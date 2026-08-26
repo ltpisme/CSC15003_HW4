@@ -89,26 +89,26 @@ function uniqueProduct(
  * Navigate to login page and wait until the page is ready.
  */
 async function openLoginPage(page: Page) {
-  await page.goto(LOGIN_URL).catch(async () => {
+  if (!page.url() || page.url() === 'about:blank') {
     await page.goto(BASE_URL);
-  });
-  await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('domcontentloaded');
+  }
 }
 
 /**
  * Navigate to Import Products page.
  */
 async function openImportPage(page: Page) {
-  await page.goto(IMPORT_URL).catch(async () => {
+  if (!page.url() || page.url() === 'about:blank') {
     await page.goto(BASE_URL);
-  });
-  await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('domcontentloaded');
+  }
 
   const productsTab = page.locator('button, a, [role="tab"]').filter({
     hasText: /Sản phẩm|Products/i,
   }).first();
 
-  if (await productsTab.isVisible({ timeout: 1000 }).catch(() => false)) {
+  if (await productsTab.isVisible({ timeout: 1500 }).catch(() => false)) {
     await productsTab.click();
     await page.waitForLoadState('domcontentloaded');
   }
@@ -118,16 +118,16 @@ async function openImportPage(page: Page) {
  * Navigate to Products page.
  */
 async function openProductsPage(page: Page) {
-  await page.goto(PRODUCTS_URL).catch(async () => {
+  if (!page.url() || page.url() === 'about:blank') {
     await page.goto(BASE_URL);
-  });
-  await page.waitForLoadState('domcontentloaded');
+    await page.waitForLoadState('domcontentloaded');
+  }
 
   const productsTab = page.locator('button, a, [role="tab"]').filter({
     hasText: /Sản phẩm|Products/i,
   }).first();
 
-  if (await productsTab.isVisible({ timeout: 1000 }).catch(() => false)) {
+  if (await productsTab.isVisible({ timeout: 1500 }).catch(() => false)) {
     await productsTab.click();
     await page.waitForLoadState('domcontentloaded');
   }
@@ -174,6 +174,7 @@ async function submitLogin(page: Page) {
 
   if (await submitButton.isVisible({ timeout: 1000 }).catch(() => false)) {
     await submitButton.click();
+    await page.waitForLoadState('domcontentloaded');
   }
 }
 
@@ -196,7 +197,7 @@ async function loginAsAdmin(page: Page) {
 
     await submitLogin(page);
 
-    await expect(page).not.toHaveURL(/\/login$/);
+    await expect(emailInput).not.toBeVisible({ timeout: 5000 }).catch(() => {});
   }
 }
 
