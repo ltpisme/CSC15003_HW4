@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:762
 
 60) tests/fr07.spec.ts:762:7 › FR-07 - Shopping Cart › TC_FR07_20 - Badge số lượng trên Navbar
-Duration: 5340ms
+Duration: 5315ms
 
 ### Error
 ```

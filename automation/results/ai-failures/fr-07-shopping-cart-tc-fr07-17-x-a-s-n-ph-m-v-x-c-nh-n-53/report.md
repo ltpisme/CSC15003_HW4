@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:666
 
 53) tests/fr07.spec.ts:666:7 › FR-07 - Shopping Cart › TC_FR07_17 - Xóa sản phẩm và xác nhận
-Duration: 5948ms
+Duration: 5969ms
 
 ### Error
 ```

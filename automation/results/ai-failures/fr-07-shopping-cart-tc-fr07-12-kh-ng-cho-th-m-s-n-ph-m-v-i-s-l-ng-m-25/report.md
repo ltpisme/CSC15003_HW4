@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:501
 
 25) tests/fr07.spec.ts:501:7 › FR-07 - Shopping Cart › TC_FR07_12 - Không cho thêm sản phẩm với số lượng âm
-Duration: 362ms
+Duration: 561ms
 
 ### Error
 ```

@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:313
 
 13) tests/fr07.spec.ts:313:7 › FR-07 - Shopping Cart › TC_FR07_04 - Kiểm tra cấu trúc các cột của giỏ hàng
-Duration: 5777ms
+Duration: 5906ms
 
 ### Error
 ```

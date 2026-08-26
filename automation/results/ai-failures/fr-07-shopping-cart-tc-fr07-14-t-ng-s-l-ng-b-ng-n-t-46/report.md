@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:579
 
 46) tests/fr07.spec.ts:579:7 › FR-07 - Shopping Cart › TC_FR07_14 - Tăng số lượng bằng nút +
-Duration: 5906ms
+Duration: 5744ms
 
 ### Error
 ```

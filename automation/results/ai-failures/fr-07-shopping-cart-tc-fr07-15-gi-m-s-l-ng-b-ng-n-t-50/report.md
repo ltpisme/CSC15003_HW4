@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:606
 
 50) tests/fr07.spec.ts:606:7 › FR-07 - Shopping Cart › TC_FR07_15 - Giảm số lượng bằng nút -
-Duration: 6635ms
+Duration: 6584ms
 
 ### Error
 ```

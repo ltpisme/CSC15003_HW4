@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:326
 
 18) tests/fr07.spec.ts:326:7 › FR-07 - Shopping Cart › TC_FR07_05 - Kiểm tra nhãn tổng tiền là Tổng cộng
-Duration: 5684ms
+Duration: 5723ms
 
 ### Error
 ```

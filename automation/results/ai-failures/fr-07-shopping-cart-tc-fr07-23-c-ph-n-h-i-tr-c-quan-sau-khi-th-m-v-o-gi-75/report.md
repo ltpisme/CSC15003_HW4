@@ -4,7 +4,7 @@
 /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:841
 
 75) tests/fr07.spec.ts:841:7 › FR-07 - Shopping Cart › TC_FR07_23 - Có phản hồi trực quan sau khi thêm vào giỏ
-Duration: 1183ms
+Duration: 3504ms
 
 ### Error
 ```
@@ -18,18 +18,18 @@ Received: false
 Error: expect(received).toBeTruthy()
 
 Received: false
-    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55
+    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:886:55
 ```
 
 ### Code Location
 ```typescript
-  876 |     const hasButtonFeedback = buttonText.includes('Đã thêm');
-  877 |
-> 878 |     expect(hasToast || hasBadge || hasButtonFeedback).toBeTruthy();
+  884 |     const hasButtonFeedback = buttonText.includes('Đã thêm');
+  885 |
+> 886 |     expect(hasToast || hasBadge || hasButtonFeedback).toBeTruthy();
       |                                                       ^
-  879 |   });
-  880 |
-  881 |   /* ============================================================
+  887 |   });
+  888 |
+  889 |   /* ============================================================
 ```
 
 ### Page State When Failed

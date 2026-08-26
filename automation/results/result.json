@@ -145,12 +145,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 317,
+                      "duration": 280,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:21.738Z",
+                      "startTime": "2026-08-26T16:18:21.060Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -179,12 +179,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 278,
+                      "duration": 300,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:22.149Z",
+                      "startTime": "2026-08-26T16:18:21.428Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -213,7 +213,7 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5562,
+                      "duration": 5579,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:310:7",
@@ -237,7 +237,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:22.437Z",
+                      "startTime": "2026-08-26T16:18:21.743Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -277,7 +277,7 @@
                       "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5412,
+                      "duration": 5361,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:322:9",
@@ -301,7 +301,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:28.316Z",
+                      "startTime": "2026-08-26T16:18:27.637Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -341,7 +341,7 @@
                       "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5394,
+                      "duration": 5418,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:334:7",
@@ -365,7 +365,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:34.115Z",
+                      "startTime": "2026-08-26T16:18:33.357Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -405,12 +405,12 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 401,
+                      "duration": 402,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:39.881Z",
+                      "startTime": "2026-08-26T16:18:39.133Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -439,12 +439,12 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 430,
+                      "duration": 432,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:40.357Z",
+                      "startTime": "2026-08-26T16:18:39.610Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -473,7 +473,7 @@
                       "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 658,
+                      "duration": 787,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:426:41",
@@ -497,7 +497,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:40.793Z",
+                      "startTime": "2026-08-26T16:18:40.048Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -534,15 +534,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 561,
+                      "duration": 513,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:41.795Z",
+                      "startTime": "2026-08-26T16:18:41.237Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -568,15 +568,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 531,
+                      "duration": 466,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:42.450Z",
+                      "startTime": "2026-08-26T16:18:41.842Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -602,10 +602,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 10,
+                      "workerIndex": 11,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 333,
+                      "duration": 447,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:498:7",
@@ -629,7 +629,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:42.994Z",
+                      "startTime": "2026-08-26T16:18:42.317Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -669,7 +669,7 @@
                       "workerIndex": 12,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 362,
+                      "duration": 561,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:535:7",
@@ -693,7 +693,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:43.749Z",
+                      "startTime": "2026-08-26T16:18:43.211Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -730,15 +730,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 483,
+                      "duration": 553,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:44.590Z",
+                      "startTime": "2026-08-26T16:18:44.266Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -764,10 +764,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 14,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5608,
+                      "duration": 5571,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:594:30",
@@ -791,7 +791,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:45.203Z",
+                      "startTime": "2026-08-26T16:18:44.935Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -831,7 +831,7 @@
                       "workerIndex": 19,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5606,
+                      "duration": 5674,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:621:31",
@@ -855,7 +855,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:51.289Z",
+                      "startTime": "2026-08-26T16:18:51.020Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -895,7 +895,7 @@
                       "workerIndex": 22,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5496,
+                      "duration": 5528,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:646:31",
@@ -919,7 +919,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:57.371Z",
+                      "startTime": "2026-08-26T16:18:57.268Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -959,7 +959,7 @@
                       "workerIndex": 24,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5469,
+                      "duration": 5439,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:688:26",
@@ -983,7 +983,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:03.287Z",
+                      "startTime": "2026-08-26T16:19:03.171Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1023,7 +1023,7 @@
                       "workerIndex": 27,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5434,
+                      "duration": 5437,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:723:26",
@@ -1047,7 +1047,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:09.132Z",
+                      "startTime": "2026-08-26T16:19:09.008Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1087,12 +1087,12 @@
                       "workerIndex": 30,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 481,
+                      "duration": 532,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:14.985Z",
+                      "startTime": "2026-08-26T16:19:14.835Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1121,7 +1121,7 @@
                       "workerIndex": 30,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5193,
+                      "duration": 5175,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:777:25",
@@ -1145,7 +1145,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:15.543Z",
+                      "startTime": "2026-08-26T16:19:15.436Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1185,7 +1185,7 @@
                       "workerIndex": 33,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5163,
+                      "duration": 5164,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:824:30",
@@ -1209,7 +1209,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:21.067Z",
+                      "startTime": "2026-08-26T16:19:21.008Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1246,10 +1246,10 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 36,
+                      "workerIndex": 35,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5211,
+                      "duration": 5161,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:836:22",
@@ -1273,7 +1273,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:26.642Z",
+                      "startTime": "2026-08-26T16:19:26.569Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1313,31 +1313,31 @@
                       "workerIndex": 38,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 349,
+                      "duration": 2650,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:886:55",
                         "location": {
                           "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                           "column": 55,
-                          "line": 878
+                          "line": 886
                         },
-                        "snippet": "\u001b[0m \u001b[90m 876 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 877 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 878 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 879 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 880 |\u001b[39m\n \u001b[90m 881 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 884 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 885 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 886 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 887 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 888 |\u001b[39m\n \u001b[90m 889 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                             "column": 55,
-                            "line": 878
+                            "line": 886
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 876 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 877 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 878 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 879 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 880 |\u001b[39m\n \u001b[90m 881 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 884 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 885 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 886 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 887 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 888 |\u001b[39m\n \u001b[90m 889 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:886:55\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:32.276Z",
+                      "startTime": "2026-08-26T16:19:32.133Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1349,7 +1349,7 @@
                       "errorLocation": {
                         "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                         "column": 55,
-                        "line": 878
+                        "line": 886
                       }
                     }
                   ],
@@ -1374,34 +1374,34 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 39,
+                      "workerIndex": 40,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5480,
+                      "duration": 5483,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:894:9",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:902:9",
                         "location": {
                           "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                           "column": 9,
-                          "line": 894
+                          "line": 902
                         },
-                        "snippet": "\u001b[0m \u001b[90m 892 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 893 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 894 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 895 |\u001b[39m     }\n \u001b[90m 896 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 897 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 900 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 901 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 902 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 903 |\u001b[39m     }\n \u001b[90m 904 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 905 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                             "column": 9,
-                            "line": 894
+                            "line": 902
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n\n\u001b[0m \u001b[90m 892 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 893 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 894 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 895 |\u001b[39m     }\n \u001b[90m 896 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 897 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:894:9\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n\n\u001b[0m \u001b[90m 900 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 901 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 902 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 903 |\u001b[39m     }\n \u001b[90m 904 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 905 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:902:9\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:33.007Z",
+                      "startTime": "2026-08-26T16:19:35.244Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1413,7 +1413,7 @@
                       "errorLocation": {
                         "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                         "column": 9,
-                        "line": 894
+                        "line": 902
                       }
                     }
                   ],
@@ -1422,12 +1422,12 @@
               ],
               "id": "b061d77a39e37644dba5-bdabcde2b4a17ab4ba32",
               "file": "fr07.spec.ts",
-              "line": 885,
+              "line": 893,
               "column": 7
             },
             {
               "title": "TC_FR07_25 - Kiểm tra màu nút hành động và nút nguy hiểm",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -1440,53 +1440,23 @@
                     {
                       "workerIndex": 42,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 419,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:19",
-                        "location": {
-                          "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                          "column": 19,
-                          "line": 925
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 923 |\u001b[39m     \u001b[36mif\u001b[39m (rgbValues \u001b[33m&&\u001b[39m rgbValues\u001b[33m.\u001b[39mlength \u001b[33m>=\u001b[39m \u001b[35m3\u001b[39m) {\n \u001b[90m 924 |\u001b[39m       \u001b[36mconst\u001b[39m [red\u001b[33m,\u001b[39m green\u001b[33m,\u001b[39m blue] \u001b[33m=\u001b[39m rgbValues\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 925 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(green)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 926 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(blue)\u001b[33m;\u001b[39m\n \u001b[90m 927 |\u001b[39m     }\n \u001b[90m 928 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                            "column": 19,
-                            "line": 925
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 923 |\u001b[39m     \u001b[36mif\u001b[39m (rgbValues \u001b[33m&&\u001b[39m rgbValues\u001b[33m.\u001b[39mlength \u001b[33m>=\u001b[39m \u001b[35m3\u001b[39m) {\n \u001b[90m 924 |\u001b[39m       \u001b[36mconst\u001b[39m [red\u001b[33m,\u001b[39m green\u001b[33m,\u001b[39m blue] \u001b[33m=\u001b[39m rgbValues\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 925 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(green)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 926 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(blue)\u001b[33m;\u001b[39m\n \u001b[90m 927 |\u001b[39m     }\n \u001b[90m 928 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:19\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 480,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:38.857Z",
+                      "startTime": "2026-08-26T16:19:41.114Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/ltp/CSC15003_HW4/automation/test-results/fr07-FR-07---Shopping-Cart-fd1b3--hành-động-và-nút-nguy-hiểm-chromium/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                        "column": 19,
-                        "line": 925
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "b061d77a39e37644dba5-0b5beaad5e88fcbf3eac",
               "file": "fr07.spec.ts",
-              "line": 898,
+              "line": 906,
               "column": 7
             },
             {
@@ -1502,15 +1472,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 43,
+                      "workerIndex": 42,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 448,
+                      "duration": 510,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:39.653Z",
+                      "startTime": "2026-08-26T16:19:41.674Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1520,7 +1490,7 @@
               ],
               "id": "b061d77a39e37644dba5-416e7b207c8997957120",
               "file": "fr07.spec.ts",
-              "line": 930,
+              "line": 946,
               "column": 7
             },
             {
@@ -1539,12 +1509,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1292,
+                      "duration": 1127,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:21.763Z",
+                      "startTime": "2026-08-26T16:18:21.053Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1573,12 +1543,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 650,
+                      "duration": 629,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:23.475Z",
+                      "startTime": "2026-08-26T16:18:22.560Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1607,7 +1577,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 5740,
+                      "duration": 5606,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:310:7",
@@ -1631,7 +1601,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:24.138Z",
+                      "startTime": "2026-08-26T16:18:23.202Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1671,7 +1641,7 @@
                       "workerIndex": 5,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 6291,
+                      "duration": 6248,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:322:9",
@@ -1695,7 +1665,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:30.572Z",
+                      "startTime": "2026-08-26T16:18:29.463Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1735,7 +1705,7 @@
                       "workerIndex": 8,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 6323,
+                      "duration": 6328,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:334:7",
@@ -1759,7 +1729,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:37.665Z",
+                      "startTime": "2026-08-26T16:18:36.520Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1796,15 +1766,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 13,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1566,
+                      "duration": 1781,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:45.126Z",
+                      "startTime": "2026-08-26T16:18:43.934Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1830,15 +1800,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 13,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 793,
+                      "duration": 1054,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:47.135Z",
+                      "startTime": "2026-08-26T16:18:46.247Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1864,10 +1834,10 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 13,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 1260,
+                      "duration": 1459,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:426:41",
@@ -1891,7 +1861,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:47.940Z",
+                      "startTime": "2026-08-26T16:18:47.321Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1931,12 +1901,12 @@
                       "workerIndex": 17,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1619,
+                      "duration": 2216,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:49.899Z",
+                      "startTime": "2026-08-26T16:18:49.616Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1965,12 +1935,12 @@
                       "workerIndex": 17,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 789,
+                      "duration": 898,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:51.850Z",
+                      "startTime": "2026-08-26T16:18:52.241Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1999,7 +1969,7 @@
                       "workerIndex": 17,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 562,
+                      "duration": 594,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:498:7",
@@ -2023,7 +1993,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:52.649Z",
+                      "startTime": "2026-08-26T16:18:53.157Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2063,7 +2033,7 @@
                       "workerIndex": 20,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 1321,
+                      "duration": 1280,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:535:7",
@@ -2087,7 +2057,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:53.870Z",
+                      "startTime": "2026-08-26T16:18:54.345Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2127,12 +2097,12 @@
                       "workerIndex": 21,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1201,
+                      "duration": 1549,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:56.034Z",
+                      "startTime": "2026-08-26T16:18:56.488Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2161,7 +2131,7 @@
                       "workerIndex": 21,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 5906,
+                      "duration": 5744,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:594:30",
@@ -2185,7 +2155,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:57.530Z",
+                      "startTime": "2026-08-26T16:18:58.340Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2225,7 +2195,7 @@
                       "workerIndex": 25,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 6635,
+                      "duration": 6584,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:621:31",
@@ -2249,7 +2219,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:04.004Z",
+                      "startTime": "2026-08-26T16:19:04.640Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2289,7 +2259,7 @@
                       "workerIndex": 29,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 6273,
+                      "duration": 6385,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:646:31",
@@ -2313,7 +2283,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:11.658Z",
+                      "startTime": "2026-08-26T16:19:12.176Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2353,7 +2323,7 @@
                       "workerIndex": 32,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 6443,
+                      "duration": 6610,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:688:26",
@@ -2377,7 +2347,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:18.814Z",
+                      "startTime": "2026-08-26T16:19:19.478Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2414,10 +2384,10 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 35,
+                      "workerIndex": 36,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 6583,
+                      "duration": 6322,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:723:26",
@@ -2441,7 +2411,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:26.117Z",
+                      "startTime": "2026-08-26T16:19:26.969Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2478,15 +2448,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 40,
+                      "workerIndex": 39,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1385,
+                      "duration": 1552,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:33.614Z",
+                      "startTime": "2026-08-26T16:19:34.080Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2512,10 +2482,10 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 40,
+                      "workerIndex": 39,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 5326,
+                      "duration": 5340,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:777:25",
@@ -2539,7 +2509,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:35.268Z",
+                      "startTime": "2026-08-26T16:19:35.919Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2576,10 +2546,10 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 44,
-                      "parallelIndex": 0,
+                      "workerIndex": 43,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 5967,
+                      "duration": 5938,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:824:30",
@@ -2603,7 +2573,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:41.116Z",
+                      "startTime": "2026-08-26T16:19:41.957Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2640,10 +2610,10 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 47,
-                      "parallelIndex": 0,
+                      "workerIndex": 46,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 5773,
+                      "duration": 5803,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:836:22",
@@ -2667,7 +2637,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:47.872Z",
+                      "startTime": "2026-08-26T16:19:48.734Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2704,34 +2674,34 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 50,
+                      "workerIndex": 48,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 1183,
+                      "duration": 3504,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:886:55",
                         "location": {
                           "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                           "column": 55,
-                          "line": 878
+                          "line": 886
                         },
-                        "snippet": "\u001b[0m \u001b[90m 876 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 877 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 878 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 879 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 880 |\u001b[39m\n \u001b[90m 881 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 884 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 885 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 886 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 887 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 888 |\u001b[39m\n \u001b[90m 889 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                             "column": 55,
-                            "line": 878
+                            "line": 886
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 876 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 877 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 878 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 879 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 880 |\u001b[39m\n \u001b[90m 881 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 884 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 885 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 886 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 887 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 888 |\u001b[39m\n \u001b[90m 889 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:886:55\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:54.429Z",
+                      "startTime": "2026-08-26T16:19:55.326Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2743,7 +2713,7 @@
                       "errorLocation": {
                         "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                         "column": 55,
-                        "line": 878
+                        "line": 886
                       }
                     }
                   ],
@@ -2768,34 +2738,34 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 51,
+                      "workerIndex": 49,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 6195,
+                      "duration": 6231,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:894:9",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:902:9",
                         "location": {
                           "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                           "column": 9,
-                          "line": 894
+                          "line": 902
                         },
-                        "snippet": "\u001b[0m \u001b[90m 892 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 893 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 894 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 895 |\u001b[39m     }\n \u001b[90m 896 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 897 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 900 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 901 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 902 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 903 |\u001b[39m     }\n \u001b[90m 904 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 905 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                             "column": 9,
-                            "line": 894
+                            "line": 902
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n\n\u001b[0m \u001b[90m 892 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 893 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 894 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 895 |\u001b[39m     }\n \u001b[90m 896 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 897 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:894:9\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n\n\u001b[0m \u001b[90m 900 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 901 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 902 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 903 |\u001b[39m     }\n \u001b[90m 904 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 905 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:902:9\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:56.467Z",
+                      "startTime": "2026-08-26T16:19:59.662Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -2807,7 +2777,7 @@
                       "errorLocation": {
                         "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                         "column": 9,
-                        "line": 894
+                        "line": 902
                       }
                     }
                   ],
@@ -2816,12 +2786,12 @@
               ],
               "id": "b061d77a39e37644dba5-ed031adc812e5670bd7e",
               "file": "fr07.spec.ts",
-              "line": 885,
+              "line": 893,
               "column": 7
             },
             {
               "title": "TC_FR07_25 - Kiểm tra màu nút hành động và nút nguy hiểm",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -2832,55 +2802,25 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 52,
+                      "workerIndex": 50,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 1300,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:19",
-                        "location": {
-                          "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                          "column": 19,
-                          "line": 925
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 923 |\u001b[39m     \u001b[36mif\u001b[39m (rgbValues \u001b[33m&&\u001b[39m rgbValues\u001b[33m.\u001b[39mlength \u001b[33m>=\u001b[39m \u001b[35m3\u001b[39m) {\n \u001b[90m 924 |\u001b[39m       \u001b[36mconst\u001b[39m [red\u001b[33m,\u001b[39m green\u001b[33m,\u001b[39m blue] \u001b[33m=\u001b[39m rgbValues\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 925 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(green)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 926 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(blue)\u001b[33m;\u001b[39m\n \u001b[90m 927 |\u001b[39m     }\n \u001b[90m 928 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                            "column": 19,
-                            "line": 925
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 923 |\u001b[39m     \u001b[36mif\u001b[39m (rgbValues \u001b[33m&&\u001b[39m rgbValues\u001b[33m.\u001b[39mlength \u001b[33m>=\u001b[39m \u001b[35m3\u001b[39m) {\n \u001b[90m 924 |\u001b[39m       \u001b[36mconst\u001b[39m [red\u001b[33m,\u001b[39m green\u001b[33m,\u001b[39m blue] \u001b[33m=\u001b[39m rgbValues\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 925 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(green)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 926 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(blue)\u001b[33m;\u001b[39m\n \u001b[90m 927 |\u001b[39m     }\n \u001b[90m 928 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:19\u001b[22m"
-                        }
-                      ],
+                      "status": "passed",
+                      "duration": 1283,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:55:03.431Z",
+                      "startTime": "2026-08-26T16:20:06.716Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/ltp/CSC15003_HW4/automation/test-results/fr07-FR-07---Shopping-Cart-fd1b3--hành-động-và-nút-nguy-hiểm-firefox/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                        "column": 19,
-                        "line": 925
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "b061d77a39e37644dba5-d76559f7f886ae5074ac",
               "file": "fr07.spec.ts",
-              "line": 898,
+              "line": 906,
               "column": 7
             },
             {
@@ -2896,15 +2836,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 53,
+                      "workerIndex": 50,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1582,
+                      "duration": 951,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:55:05.529Z",
+                      "startTime": "2026-08-26T16:20:08.283Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2914,7 +2854,7 @@
               ],
               "id": "b061d77a39e37644dba5-a7721d2613798795c2ef",
               "file": "fr07.spec.ts",
-              "line": 930,
+              "line": 946,
               "column": 7
             },
             {
@@ -2933,12 +2873,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 476,
+                      "duration": 445,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:21.735Z",
+                      "startTime": "2026-08-26T16:18:21.046Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2967,12 +2907,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 570,
+                      "duration": 518,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:22.327Z",
+                      "startTime": "2026-08-26T16:18:21.583Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3001,7 +2941,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 6322,
+                      "duration": 5975,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:310:7",
@@ -3025,7 +2965,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:22.915Z",
+                      "startTime": "2026-08-26T16:18:22.121Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3065,7 +3005,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5777,
+                      "duration": 5906,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:322:9",
@@ -3089,7 +3029,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:29.583Z",
+                      "startTime": "2026-08-26T16:18:28.411Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3129,7 +3069,7 @@
                       "workerIndex": 7,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5684,
+                      "duration": 5723,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Tổng cộng', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Tổng cộng', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:334:7",
@@ -3153,7 +3093,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:35.733Z",
+                      "startTime": "2026-08-26T16:18:34.703Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3190,15 +3130,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 10,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 957,
+                      "duration": 1000,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:41.862Z",
+                      "startTime": "2026-08-26T16:18:40.868Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3224,15 +3164,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 10,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 854,
+                      "duration": 925,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:42.917Z",
+                      "startTime": "2026-08-26T16:18:41.952Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3258,10 +3198,10 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 10,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 1733,
+                      "duration": 1796,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m4\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:426:41",
@@ -3285,7 +3225,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:43.782Z",
+                      "startTime": "2026-08-26T16:18:42.900Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3325,12 +3265,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 956,
+                      "duration": 1236,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:45.953Z",
+                      "startTime": "2026-08-26T16:18:45.226Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3359,12 +3299,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 943,
+                      "duration": 1180,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:47.003Z",
+                      "startTime": "2026-08-26T16:18:46.586Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3393,7 +3333,7 @@
                       "workerIndex": 15,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 779,
+                      "duration": 1044,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:498:7",
@@ -3417,7 +3357,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:47.956Z",
+                      "startTime": "2026-08-26T16:18:47.783Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3457,7 +3397,7 @@
                       "workerIndex": 16,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 749,
+                      "duration": 981,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:535:7",
@@ -3481,7 +3421,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:49.140Z",
+                      "startTime": "2026-08-26T16:18:49.241Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3521,12 +3461,12 @@
                       "workerIndex": 18,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1178,
+                      "duration": 1121,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:50.351Z",
+                      "startTime": "2026-08-26T16:18:50.840Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3555,7 +3495,7 @@
                       "workerIndex": 18,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5984,
+                      "duration": 6140,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /\\+/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:594:30",
@@ -3579,7 +3519,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:51.617Z",
+                      "startTime": "2026-08-26T16:18:52.128Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3619,7 +3559,7 @@
                       "workerIndex": 23,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5962,
+                      "duration": 6012,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:621:31",
@@ -3643,7 +3583,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:53:58.123Z",
+                      "startTime": "2026-08-26T16:18:58.695Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3683,7 +3623,7 @@
                       "workerIndex": 26,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5891,
+                      "duration": 6006,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('tr, .cart-item, [data-testid=\"cart-item\"], tbody tr').filter({ hasText: 'iPhone 15 Pro Max' }).first().getByRole('button', { name: /-/i })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:646:31",
@@ -3707,7 +3647,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:04.560Z",
+                      "startTime": "2026-08-26T16:19:05.149Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3747,7 +3687,7 @@
                       "workerIndex": 28,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5948,
+                      "duration": 5969,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:688:26",
@@ -3771,7 +3711,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:10.852Z",
+                      "startTime": "2026-08-26T16:19:11.533Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3811,7 +3751,7 @@
                       "workerIndex": 31,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5929,
+                      "duration": 5866,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[role=\"dialog\"], .modal, .confirm-dialog, [data-testid=\"confirm-dialog\"]').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:723:26",
@@ -3835,7 +3775,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:17.204Z",
+                      "startTime": "2026-08-26T16:19:17.884Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3875,12 +3815,12 @@
                       "workerIndex": 34,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 883,
+                      "duration": 808,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:23.543Z",
+                      "startTime": "2026-08-26T16:19:24.128Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3909,7 +3849,7 @@
                       "workerIndex": 34,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5340,
+                      "duration": 5315,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-testid=\"cart-badge\"], .cart-badge, .badge, nav a[href=\"/cart\"] span, header a[href=\"/cart\"] span').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:777:25",
@@ -3933,7 +3873,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:24.509Z",
+                      "startTime": "2026-08-26T16:19:25.021Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -3973,7 +3913,7 @@
                       "workerIndex": 37,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5303,
+                      "duration": 5250,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('[aria-label=\"breadcrumb\"], .breadcrumb, [data-testid=\"breadcrumb\"], nav ol, nav ul').first()\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:824:30",
@@ -3997,7 +3937,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:30.153Z",
+                      "startTime": "2026-08-26T16:19:30.661Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4037,7 +3977,7 @@
                       "workerIndex": 41,
                       "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 5287,
+                      "duration": 5305,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveCount\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('h1')\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m0\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveCount\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('h1')\u001b[22m\n\u001b[2m    14 × locator resolved to 0 elements\u001b[22m\n\u001b[2m       - unexpected value \"0\"\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:836:22",
@@ -4061,7 +4001,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:35.936Z",
+                      "startTime": "2026-08-26T16:19:36.329Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4098,34 +4038,34 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 45,
-                      "parallelIndex": 1,
+                      "workerIndex": 44,
+                      "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 748,
+                      "duration": 3147,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:886:55",
                         "location": {
                           "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                           "column": 55,
-                          "line": 878
+                          "line": 886
                         },
-                        "snippet": "\u001b[0m \u001b[90m 876 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 877 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 878 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 879 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 880 |\u001b[39m\n \u001b[90m 881 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 884 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 885 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 886 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 887 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 888 |\u001b[39m\n \u001b[90m 889 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                             "column": 55,
-                            "line": 878
+                            "line": 886
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 876 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 877 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 878 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 879 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 880 |\u001b[39m\n \u001b[90m 881 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:878:55\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 884 |\u001b[39m     \u001b[36mconst\u001b[39m hasButtonFeedback \u001b[33m=\u001b[39m buttonText\u001b[33m.\u001b[39mincludes(\u001b[32m'Đã thêm'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 885 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 886 |\u001b[39m     expect(hasToast \u001b[33m||\u001b[39m hasBadge \u001b[33m||\u001b[39m hasButtonFeedback)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 887 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 888 |\u001b[39m\n \u001b[90m 889 |\u001b[39m   \u001b[90m/* ============================================================\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:886:55\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:41.639Z",
+                      "startTime": "2026-08-26T16:19:42.195Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4137,7 +4077,7 @@
                       "errorLocation": {
                         "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                         "column": 55,
-                        "line": 878
+                        "line": 886
                       }
                     }
                   ],
@@ -4162,34 +4102,34 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 46,
-                      "parallelIndex": 1,
+                      "workerIndex": 45,
+                      "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 5765,
+                      "duration": 5812,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:894:9",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:902:9",
                         "location": {
                           "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                           "column": 9,
-                          "line": 894
+                          "line": 902
                         },
-                        "snippet": "\u001b[0m \u001b[90m 892 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 893 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 894 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 895 |\u001b[39m     }\n \u001b[90m 896 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 897 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[0m \u001b[90m 900 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 901 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 902 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 903 |\u001b[39m     }\n \u001b[90m 904 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 905 |\u001b[39m\u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                             "column": 9,
-                            "line": 894
+                            "line": 902
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n\n\u001b[0m \u001b[90m 892 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 893 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 894 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 895 |\u001b[39m     }\n \u001b[90m 896 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 897 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:894:9\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Đơn giá', { exact: true })\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Đơn giá', { exact: true })\u001b[22m\n\n\n\u001b[0m \u001b[90m 900 |\u001b[39m       \u001b[36mawait\u001b[39m expect(\n \u001b[90m 901 |\u001b[39m         page\u001b[33m.\u001b[39mgetByText(text\u001b[33m,\u001b[39m { exact\u001b[33m:\u001b[39m \u001b[36mtrue\u001b[39m })\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 902 |\u001b[39m       )\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 903 |\u001b[39m     }\n \u001b[90m 904 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 905 |\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:902:9\u001b[22m"
                         }
                       ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:42.830Z",
+                      "startTime": "2026-08-26T16:19:45.718Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -4201,7 +4141,7 @@
                       "errorLocation": {
                         "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
                         "column": 9,
-                        "line": 894
+                        "line": 902
                       }
                     }
                   ],
@@ -4210,12 +4150,12 @@
               ],
               "id": "b061d77a39e37644dba5-284caf9ea09e838845ca",
               "file": "fr07.spec.ts",
-              "line": 885,
+              "line": 893,
               "column": 7
             },
             {
               "title": "TC_FR07_25 - Kiểm tra màu nút hành động và nút nguy hiểm",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
@@ -4226,55 +4166,25 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 48,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 825,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:19",
-                        "location": {
-                          "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                          "column": 19,
-                          "line": 925
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 923 |\u001b[39m     \u001b[36mif\u001b[39m (rgbValues \u001b[33m&&\u001b[39m rgbValues\u001b[33m.\u001b[39mlength \u001b[33m>=\u001b[39m \u001b[35m3\u001b[39m) {\n \u001b[90m 924 |\u001b[39m       \u001b[36mconst\u001b[39m [red\u001b[33m,\u001b[39m green\u001b[33m,\u001b[39m blue] \u001b[33m=\u001b[39m rgbValues\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 925 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(green)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 926 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(blue)\u001b[33m;\u001b[39m\n \u001b[90m 927 |\u001b[39m     }\n \u001b[90m 928 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                            "column": 19,
-                            "line": 925
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 923 |\u001b[39m     \u001b[36mif\u001b[39m (rgbValues \u001b[33m&&\u001b[39m rgbValues\u001b[33m.\u001b[39mlength \u001b[33m>=\u001b[39m \u001b[35m3\u001b[39m) {\n \u001b[90m 924 |\u001b[39m       \u001b[36mconst\u001b[39m [red\u001b[33m,\u001b[39m green\u001b[33m,\u001b[39m blue] \u001b[33m=\u001b[39m rgbValues\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 925 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(green)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 926 |\u001b[39m       expect(red)\u001b[33m.\u001b[39mtoBeGreaterThan(blue)\u001b[33m;\u001b[39m\n \u001b[90m 927 |\u001b[39m     }\n \u001b[90m 928 |\u001b[39m   })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts:925:19\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": 47,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 780,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:48.999Z",
+                      "startTime": "2026-08-26T16:19:51.914Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "/home/ltp/CSC15003_HW4/automation/test-results/fr07-FR-07---Shopping-Cart-fd1b3--hành-động-và-nút-nguy-hiểm-webkit/error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "/home/ltp/CSC15003_HW4/automation/tests/fr07.spec.ts",
-                        "column": 19,
-                        "line": 925
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "expected"
                 }
               ],
               "id": "b061d77a39e37644dba5-d70416880c5e0e173cce",
               "file": "fr07.spec.ts",
-              "line": 898,
+              "line": 906,
               "column": 7
             },
             {
@@ -4290,15 +4200,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 49,
-                      "parallelIndex": 1,
+                      "workerIndex": 47,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 829,
+                      "duration": 840,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-08-26T15:54:50.208Z",
+                      "startTime": "2026-08-26T16:19:52.773Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -4308,7 +4218,7 @@
               ],
               "id": "b061d77a39e37644dba5-2aea3b084ef5e0acaaec",
               "file": "fr07.spec.ts",
-              "line": 930,
+              "line": 946,
               "column": 7
             }
           ]
@@ -4318,11 +4228,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-08-26T15:53:21.290Z",
-    "duration": 106404.76299999999,
-    "expected": 27,
+    "startTime": "2026-08-26T16:18:20.712Z",
+    "duration": 108893.06999999999,
+    "expected": 30,
     "skipped": 0,
-    "unexpected": 51,
+    "unexpected": 48,
     "flaky": 0
   }
 }
