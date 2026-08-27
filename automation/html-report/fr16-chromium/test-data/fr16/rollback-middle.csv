@@ -1,0 +1,4 @@
+name,price,description,imageUrl,category_id
+FR16-ROLLBACK-A-1787836059902-3rhuv,1000,Desc A,http://url-a.com,1
+FR16-ROLLBACK-B-1787836059902-c5juq,0,Desc B,http://url-b.com,1
+FR16-ROLLBACK-C-1787836059902-joox2,2000,Desc C,http://url-c.com,1
