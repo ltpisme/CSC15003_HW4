@@ -1,0 +1,47 @@
+# Test Execution & Automation Report
+
+## 1. Executive Summary
+
+- **Target Application / Feature**: {{TARGET_FEATURE_NAME}}
+- **Test Framework**: Playwright (TypeScript)
+- **Execution Date**: {{EXECUTION_DATE}}
+- **Overall Status**: {{OVERALL_STATUS}}
+
+### Metrics Summary
+
+| Total Cases | Passed | Failed | Skipped | Pass Rate |
+| :--- | :--- | :--- | :--- | :--- |
+| {{TOTAL_CASES}} | {{PASSED_CASES}} | {{FAILED_CASES}} | {{SKIPPED_CASES}} | {{PASS_RATE}}% |
+
+---
+
+## 2. Requirement Traceability Matrix
+
+| Requirement ID | Test Case ID | Scenario Description | Type | Execution Result |
+| :--- | :--- | :--- | :--- | :--- |
+| {{REQ_ID}} | {{TEST_CASE_ID}} | {{SCENARIO_DESCRIPTION}} | Positive / Negative / Boundary | Pass / Fail |
+
+---
+
+## 3. Detailed Test Results
+
+| Test Case ID | Browser / Project | Duration | Status | Notes / Failure Snippet |
+| :--- | :--- | :--- | :--- | :--- |
+| {{TEST_CASE_ID}} | {{BROWSER_NAME}} | {{DURATION_MS}}ms | Passed / Failed | {{FAILURE_REASON_OR_N_A}} |
+
+---
+
+## 4. Defect & Failure Root Cause Analysis
+
+### [BUG-01] {{BUG_TITLE}}
+- **Affected Test Case(s)**: `{{TEST_CASE_ID}}`
+- **Expected Behavior**: {{EXPECTED_BEHAVIOR}}
+- **Actual Behavior**: {{ACTUAL_BEHAVIOR}}
+- **Root Cause Category**: SUT Bug / Selector Mismatch / Timing Issue
+- **Steps to Reproduce**:
+  1. {{STEP_1}}
+  2. {{STEP_2}}
+- **Evidence / Error Log**:
+  ```text
+  {{ERROR_LOG_SNIPPET}}
+  ```

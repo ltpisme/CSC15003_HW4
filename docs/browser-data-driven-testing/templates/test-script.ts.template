@@ -1,0 +1,90 @@
+import { test, expect, Page } from '@playwright/test';
+import * as fs from 'fs';
+import * as path from 'path';
+
+// 1. Types & Interfaces
+interface TestCaseData {
+  testCaseId: string;
+  description: string;
+  input: Record<string, any>;
+  expected: {
+    status?: string | number;
+    message?: string;
+    targetUrl?: string;
+    shouldSucceed: boolean;
+  };
+}
+
+// 2. Data Loading (JSON / CSV parser)
+const DATA_FILE_PATH = path.resolve(__dirname, '../data/test-data.json');
+const testCases: TestCaseData[] = JSON.parse(fs.readFileSync(DATA_FILE_PATH, 'utf-8'));
+
+// 3. Page Object / Action Helpers
+class FeaturePageHelper {
+  constructor(private page: Page) {}
+
+  async navigateTo(path: string = '/') {
+    await this.page.goto(path);
+    await this.page.waitForLoadState('domcontentloaded');
+  }
+
+  async fillForm(fields: Record<string, string>) {
+    for (const [key, value] of Object.entries(fields)) {
+      const fieldLocator = this.page
+        .getByLabel(new RegExp(key, 'i'))
+        .or(this.page.getByPlaceholder(new RegExp(key, 'i')))
+        .or(this.page.locator(`[name="${key}"]`));
+      
+      await expect(fieldLocator).toBeVisible();
+      await fieldLocator.fill(value);
+    }
+  }
+
+  async submitAction(buttonName: string | RegExp = /Submit|Save|Confirm/i) {
+    const submitBtn = this.page.getByRole('button', { name: buttonName });
+    await expect(submitBtn).toBeEnabled();
+    await submitBtn.click();
+  }
+
+  async getFeedbackMessage() {
+    const feedbackLocator = this.page.locator(
+      '[role="alert"], .alert, .notification, .toast, [class*="error"], [class*="success"]'
+    ).first();
+    await expect(feedbackLocator).toBeVisible();
+    return feedbackLocator.textContent();
+  }
+}
+
+// 4. Data-Driven Test Suite Execution
+test.describe('Feature Test Suite - Data Driven', () => {
+  let helper: FeaturePageHelper;
+
+  test.beforeEach(async ({ page }) => {
+    helper = new FeaturePageHelper(page);
+    await helper.navigateTo();
+  });
+
+  for (const tc of testCases) {
+    test(`[${tc.testCaseId}] ${tc.description}`, async ({ page }) => {
+      // Step 1: Perform Action with Inputs
+      await helper.fillForm(tc.input);
+      await helper.submitAction();
+
+      // Step 2: Validate Outcome
+      if (tc.expected.shouldSucceed) {
+        if (tc.expected.targetUrl) {
+          await expect(page).toHaveURL(new RegExp(tc.expected.targetUrl));
+        }
+        if (tc.expected.message) {
+          const msg = await helper.getFeedbackMessage();
+          expect(msg).toContain(tc.expected.message);
+        }
+      } else {
+        if (tc.expected.message) {
+          const msg = await helper.getFeedbackMessage();
+          expect(msg).toContain(tc.expected.message);
+        }
+      }
+    });
+  }
+});
